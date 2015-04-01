@@ -1,0 +1,34 @@
+{% extends "layout.twig" %}
+{% block content %}
+
+<!-- CONTAINING PAGE WRAP-->
+<div class="page-wrap">
+
+	<div class="bk-pt-default">
+
+		{% include '/includes/rd-header--alt.twig' %}
+
+		<!-- SUB NAV BAR !-->
+        <section class="partners-subnav">
+            <div class="container">
+                <h5 class="heading--white  space--none">Oops...</h5>
+            </div>
+        </section>
+
+		<section class="main">
+			<div class="wrapper page-404">
+			    <img src="{{asset('images/BK-404.png')}}">
+			   	<h5 class="space--10">Sorry the page your looking for is not available.</h5>
+			   	<p>We can't find the page you're looking for. Please follow the link below to be taken back to reality.</p>
+			    <a href="/home" class="button stan-btn orange">Back to the homepage</a>
+			</div>
+		</section>
+
+	</div>
+
+	{% include '/includes/rd-footer.twig' %}
+
+<!-- END CONTAINING PAGE WRAP-->
+</div>
+
+{% endblock %}

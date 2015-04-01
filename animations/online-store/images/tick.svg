@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>round68</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="round68" sketch:type="MSLayerGroup" transform="translate(0.214599, 0.386207)" fill="#FFFFFF">
+            <g id="Group" sketch:type="MSShapeGroup">
+                <g id="Shape-+-Shape">
+                    <path d="M19.9996,0 C8.9713,0 0,8.972 0,20 C0,31.028 8.9713,40 19.9996,40 C31.0279,40 40,31.028 40,20 C40,8.972 31.0279,0 19.9996,0 L19.9996,0 Z M19.9996,37.377 C10.418,37.377 2.623,29.5816 2.623,20 C2.623,10.4183 10.4179,2.6231 19.9996,2.6231 C29.5813,2.6231 37.3767,10.4184 37.3767,20 C37.3768,29.5816 29.5812,37.377 19.9996,37.377 L19.9996,37.377 Z" id="Shape"></path>
+                    <path d="M27.2406,13.4526 L16.9275,23.7652 L12.7586,19.5972 C12.2463,19.0855 11.4164,19.0852 10.9041,19.5975 C10.3916,20.11 10.3916,20.94 10.9041,21.4523 L16.0004,26.5478 C16.2565,26.8036 16.592,26.9316 16.9275,26.9316 C17.263,26.9316 17.5994,26.8036 17.8554,26.5474 C17.8562,26.5463 17.8568,26.5452 17.8581,26.5439 L29.095,15.3071 C29.6075,14.7951 29.6075,13.9645 29.095,13.4525 C28.5828,12.9402 27.7523,12.9402 27.2406,13.4526 L27.2406,13.4526 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

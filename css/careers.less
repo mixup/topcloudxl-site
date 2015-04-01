@@ -1,0 +1,289 @@
+// -----------------------------
+// 	Careers Table of Contents
+// -----------------------------
+
+//  1.   Careers Global
+
+//  2.   Careers Header  & Intro
+//	2.1	 - Careers Header & Vertical Centering
+//	2.2	 - Why BaseKit Intro
+
+//  3.   Vacancies Section
+//	3.1	 - Why Basekit Intro
+
+//  4.   Benefits section
+
+
+
+
+// -----------------------------
+// 1. Careers Global
+// -----------------------------
+
+
+// Careers Page Wrap
+.careers {
+	p {
+		padding-bottom: 15px;
+	}
+
+	// Page Sections
+	section {
+		padding: 4em 0;
+		@media @true-mobile {
+			padding: 3em 0;
+		}
+	}
+}
+
+
+
+// -----------------------------
+// 2. Careers Header & Intro
+// -----------------------------
+
+
+// Careers Header & Vertical Centering
+// -----------------------------------
+
+.careers-header {
+	background-image: image('/images/about-team.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+ 	background-color: #3c3c3c;
+
+	.bg-cover;
+	.box-sizing;
+	min-height: 450px;
+	max-height: 550px;
+	text-align: center;
+	width: 100%;
+
+	// Flex
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+	@media @mobile {
+		min-height: 300px;
+	}
+
+	// Careers Typography
+	h1, p {
+ 		margin: 0 auto;
+ 		max-width: 75%;
+ 		@media @mobile {
+ 			max-width: 90%;
+ 		}
+ 	}
+ 	h1 {
+ 		color: @white;
+ 		display: block;
+ 		padding-bottom: 2px;
+ 	}
+ 	p {
+ 		color: lighten(@color-swatch5, 20%);
+ 	}
+}
+
+
+// Why BaseKit Intro
+// ----------------------
+
+.why-basekit {
+	h2 {
+		padding-bottom: 35px;
+	}
+	p {
+		margin: 0 auto;
+		max-width: 75%;
+		@media @true-mobile {
+			max-width: 95%;
+		}
+	}
+}
+
+
+
+// -----------------------------
+// 3. Vacancies Section
+// -----------------------------
+
+
+// Why BaseKit Intro
+// ----------------------
+
+.vacancies {
+
+	// Vacancy Typography
+	h4 {
+		border-bottom: none;
+		font-size: 18px;
+		letter-spacing: 0;
+		margin: 0 5px 0 0;
+		text-transform: none;
+	}
+	h5 {
+		color: rgb(65,65,65);
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		margin: 30px 0 15px;
+	}
+	p {
+		font-size: 16px;
+		line-height: 28px;
+		+ h5 {
+			margin-top: 20px;
+		}
+	}
+	a {
+		right: 30px;
+		top: 28px;
+		position: absolute;
+	}
+
+	// List Style
+	ul {
+		padding-left: 20px;
+		margin-bottom: 20px;
+		li {
+			color: #939393;
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+  			line-height: 28px;
+			list-style: disc;
+			margin-bottom: 20px;
+			-webkit-font-smoothing: antialiased;
+		}
+	}
+
+	// Vacancy Accordian
+	.accordian-expand {
+		background-color: white;
+		cursor: pointer;
+		margin-bottom: 15px;
+		padding: 26px 30px 22px;
+		border: 1px solid rgb(245,245,245);
+		border-bottom: 1px solid rgb(240,240,240);
+		list-style: none;
+		position: relative;
+
+		-webkit-box-shadow: 0px 2px 3px -4px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 2px 3px -4px rgba(0,0,0,0.75);
+		box-shadow: 0px 2px 3px -4px rgba(0,0,0,0.75);
+
+		@media @true-mobile {
+			padding: 26px 85px 22px 15px;
+		}
+	}
+
+	// Job Location
+	.job-location {
+		color: @color-swatch5;
+	}
+
+	// Vacancy Description Accordian Dropdown
+	.job-role {
+		background-color: white;
+   	 	display: none;
+		margin: -15px 0 15px;
+		padding: 35px 32px 30px;
+
+		-webkit-box-shadow: 0px 2px 3px -4px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 2px 3px -4px rgba(0,0,0,0.75);
+		box-shadow: 0px 2px 3px -4px rgba(0,0,0,0.75);
+		>* {
+			max-width: 860px;
+		}
+	}
+
+	// Vacancy Information List
+	.job-information {
+		margin: 5px 0 20px;
+		padding-left: 0;
+
+		// Job Spec Font Awesome Icon
+		.icon {
+			color: rgb(200,200,200);
+		}
+		li {
+			color: darken(@color-swatch5, 12%);
+			display: inline-block;
+			list-style: none;
+			&:first-child {
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
+
+
+// -----------------------------
+// 4. Benefits Section
+// -----------------------------
+
+
+.benefits {
+	margin-left: 0;
+
+	p {
+		display: inline-block;
+		padding-bottom: 0;
+		max-width: 90%;
+	}
+
+	// Tick Icon
+	i {
+		color: @green;
+		float: right;
+	}
+
+	// Benefits List
+	ul {
+		display: inline-block;
+		margin-right: 7%;
+		width: 46%;
+		vertical-align: top;
+		@media @true-mobile {
+			margin-right: 0;
+			width: 100%;
+		}
+		&:nth-child(2) {
+			margin-right: 0;
+			li:last-child {
+				border-bottom: none;
+			}
+		}
+		li {
+			border-bottom: 1px solid rgba(0,0,0, 0.065);
+			display: block;
+			line-height: 24px;
+			list-style-type: none!important;
+			padding: 15px 0;
+			&:last-child {
+				border-bottom: none;
+				@media @mobile {
+					border-bottom: 1px solid rgba(0,0,0, 0.065);
+				}
+			}
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+}

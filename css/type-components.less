@@ -1,0 +1,330 @@
+// ---------------------------------------
+// BaseKit Website: LESS > Type Components
+// ---------------------------------------
+
+
+// -----------------------------
+// Table of Contents
+// -----------------------------
+
+// #Mixins
+// #Typography
+// #Font Awesome
+// #Buttons
+
+
+// -----------------------------
+// #Mixins
+// -----------------------------
+
+@lightGrey: #f8f8f8;
+@white: @color-swatch1;
+@green: @color-swatch3;
+@orange: @color-swatch2;
+@purple: #727ab2;
+
+// General
+@white: #fff;
+@grey-light: #f6f6f6;
+@grey-dark: #282828;
+@rd-blue: #3f7ed1;
+@rd-gold: #ff9823;
+@rd-green: #50b657;
+
+// Typography
+@feature-text-color: #dadada; // Heading 1
+@heading-color: @grey-dark;   // H1 - H4
+@body-text: #939393;          // Body Text
+@nav-link: #dadada;           // Navigatiion Link
+
+// Spacing
+@section-padding: 110px;
+@section-padding-med: 70px;
+@section-padding-sml: 40px;
+
+
+// Colour Variations
+// -----------------
+
+// Gold
+.heading--gold {
+	font-weight: 700;
+	color: @rd-gold;
+}
+// Blue
+.heading--blue {
+	font-weight: 700;
+	color: @rd-blue;
+}
+// White
+.heading--white {
+	color: @white;
+}
+// Black
+.heading--black {
+	color: @grey-dark;
+}
+
+
+// Space Variations
+// ----------------
+
+.space--none { padding-bottom: 0;    }
+.space--10   { padding-bottom: 10px; }
+.space--20   { padding-bottom: 20px; }
+.space--40   { padding-bottom: 40px; }
+.space--60   { padding-bottom: 60px; }
+
+
+// Links
+// ----------
+
+.link--white { color: @white; }     // White
+.link--dark  { color: @grey-dark; } // Dark
+.link--blue  { color: @rd-blue;   } // Blue
+
+
+// General
+// ---------
+
+// Text Align: Center
+.center {
+	text-align: center;
+}
+
+// Border Radius
+.border-radius(@radius) {
+	-webkit-border-radius:	@radius;
+	-moz-border-radius:	@radius;
+	border-radius:		@radius;
+}
+
+// Animations
+.transition (@transition) {
+	-webkit-transition: @transition;
+	-moz-transition:    @transition;
+	-ms-transition:     @transition;
+	-o-transition:      @transition;
+}
+
+// Transition Effect
+.transition-alt (@prop: all, @time: 0.5s, @ease: ease) {
+	-webkit-transition: @prop @time @ease;
+	-moz-transition:    @prop @time @ease;
+	-ms-transition:     @prop @time @ease;
+	-o-transition:      @prop @time @ease;
+}
+
+
+// Scale
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+}
+
+// Clearfix
+.clearfix {
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+
+// -----------------------------
+// #Typography
+// -----------------------------
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p, a, span, time {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 50px;
+	color: @heading-color;
+}
+
+h2,
+.heading--2 {
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 56px;
+	color: @heading-color;
+	letter-spacing: -1px;
+
+	padding-bottom: 30px;
+
+	@media @laptop {
+		font-size: 40px;
+		line-height: 54px;
+		padding-bottom: 16px;
+	}
+	@media @laptopSml {
+		br {
+			display: none;
+		}
+	}
+	@media @true-mobile {
+		font-size: 34px;
+		line-height: 42px;
+		br {
+			display: inherit;
+		}
+	}
+}
+
+h3 {
+	font-size: 23px;
+	font-weight: 700;
+	line-height: 40px;
+	color: @feature-text-color;
+	letter-spacing: 0;
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 32px;
+	color: @body-text;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border: 0;
+
+	padding-bottom: 20px;
+}
+
+h5 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 32px;
+	color: @heading-color;
+	letter-spacing: -1px;
+
+	padding-bottom: 40px;
+
+	span {
+		color: @body-text;
+		margin-left: 10px;
+	}
+
+	@media @laptopSml {
+		padding-bottom: 10px;
+	}
+}
+
+p, a {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 40px;
+	color: @body-text;
+	-webkit-font-smoothing: antialiased;
+
+	@media @true-mobile {
+		font-size: 18px;
+		line-height: 36px;
+	}
+}
+
+// General Link
+a {
+	color: @rd-blue;
+
+	&:hover {
+		color: @grey-dark;
+	}
+}
+
+
+
+
+// -----------------------------
+// #Font Awesome
+// -----------------------------
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?v=4.2.0');
+    src: url('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'),
+        url('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'),
+        url('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'),
+        url('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Fontawesome
+.icon {
+	font-style: normal;
+}
+
+.icon:before,
+.icon:after {
+    font-family: 'FontAwesome', sans-serif;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon:before { margin-right: 8px; }
+.icon:after  { margin-left:  8px; }
+
+
+// Widget Icons
+// ------------
+
+// Clock
+.fa-clock:before { content: "\f017"; }
+
+// User
+.fa-user:before { content: "\f007"; }
+
+// Tick
+.fa-tick:before { content:"\f00c"; }
+
+
+
+
+// -----------------------------
+// #Buttons
+// -----------------------------
+
+.button {
+	padding: 8px 12px;
+	.border-radius(5px);
+	background-color: @rd-green;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: @white;
+	text-decoration: none;
+
+	&:hover {
+		background-color: darken(@rd-green,5%);
+		color: @white;
+	}
+
+	&.lrg {
+		padding: 12px 20px;
+		font-size: 22px;
+	}
+	&.blue {
+		background-color: #3f7ed1;
+		&:hover {
+			background-color: darken(#3f7ed1, 8%);
+		}
+	}
+}

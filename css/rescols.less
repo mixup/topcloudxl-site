@@ -1,0 +1,785 @@
+.res-col
+{
+	width: 100%;
+	display:block;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.res-col .column
+{
+	display:block;
+	float:left;
+	min-height: 40px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.res-col:before,
+.res-col:after {
+  content: " ";
+  display: table;
+}
+.res-col:after {
+  clear: both;
+}
+.res-col {
+  *zoom: 1;
+}
+
+.span-100 {
+	width: 100%;
+}
+
+
+/*  ==============================
+	TWO COLUMNS
+	============================== */
+
+    /* === 20 x 80 === */
+
+	.columns.span-20-80 .column.span-20 {
+		width: 20%;
+	}
+
+	.columns.span-20-80 .column.span-80 {
+		width: 80%;
+	}
+
+	/* === 30 x 70 === */
+
+	.columns {
+		&.span-30-70 {
+			.column {
+				&.span-30 {
+					width: 30%;
+					@media @mobile {
+						width: 100%;
+					}
+				}
+				&.span-70 {
+					width: 70%;
+					@media @mobile {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	/* === 70 x 30 === */
+
+	.columns {
+		&.span-70-30 {
+			.column {
+				&.span-70 {
+					width: 70%;
+					@media @mobile {
+						width: 100%;
+					}
+				}
+				&.span-30 {
+					width: 30%;
+					@media @mobile {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	/* === 50 x 50 === */
+
+	.columns {
+		&.span-50-50 {
+			.column {
+				&.span-two-left {
+					width: 47.5%;
+					margin-right: 2.5%;
+					@media @mobile {
+						width: 100%;
+						margin: 0 0 3em;
+					}
+				}
+				&.span-two-right {
+					width: 47.5%;
+					margin-left: 2.5%;
+					@media @mobile {
+						width: 100%;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+
+	/* === 20 x 80 === */
+
+	.columns {
+		&.span-20-80 {
+			.column {
+				&.span-two-left {
+					width: 25%;
+					margin-right: 2.5%;
+					@media @mobile {
+						width: 100%;
+						// margin: 0 0 3em;
+					}
+				}
+				&.span-two-right {
+					width: 47.5%;
+					margin-left: 2.5%;
+					@media @mobile {
+						width: 100%;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+
+	/* === 54 x 46 === */
+
+	.columns {
+		&.span-54-46 {
+			.column {
+				&.span-two-left {
+					width: 51%;
+					margin-right: 3%;
+					@media @mobile {
+						width: 100%;
+						margin: 0 0 3em;
+					}
+				}
+				&.span-two-right {
+					width: 43%;
+					margin-left: 3%;
+					@media @mobile {
+						width: 100%;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+
+	/* === 55 x 45 === */
+
+	.columns.span-55-45 .column.span-two-left {
+		width: 50%;
+		margin-right: 5%;
+	}
+
+	.columns.span-55-45 .column.span-two-right {
+		width: 40%;
+		margin-left: 5%;
+	}
+
+	/* === 65 x 30 === */
+
+	.columns {
+		&.span-65-30 {
+			.column {
+				&.span-65 {
+					width: 65%;
+					margin-right: 5%;
+					@media @tablet {
+						width: 100%;
+						margin: 0 0 3em;
+					}
+				}
+				&.span-30 {
+					width: 30%;
+					@media @tablet {
+						width: 100%;
+						margin: 0 0 3em;
+					}
+				}
+			}
+		}
+	}
+
+/*  ==============================
+	THREE COLUMNS
+	============================== */
+
+	/* === 30 x 31 x 30 === */
+
+	.columns {
+
+		&.span-30-31-30 {
+
+			.column {
+
+				&.span-three-left,
+				&.span-three-right {
+					width: 29%;
+					@media @mobile {
+						width: 100%;
+						margin: 0 0 10%;
+					}
+				}
+				&.span-three-middle {
+					width: 30%;
+					margin-left: 5.5%;
+					margin-right: 5.5%;
+					@media @mobile {
+						width: 100%;
+						margin: 0 0 10%;
+					}
+				}
+				&.span-three-right {
+					margin: 0;
+				}
+
+			}
+		}
+
+	}
+
+
+	/* === 40 x 30 x 30 === */
+
+	.columns.span-50-25-25 .column.span-three-left {
+		width: 35%;
+		margin-right: 7%;
+	}
+
+	.columns.span-50-25-25 .column.span-three-middle {
+		width: 25%;
+		margin-right: 5%;
+	}
+
+	.columns.span-50-25-25 .column.span-three-right {
+		width: 25%;
+	}
+
+
+/*  ==============================
+	FOUR COLUMNS
+	============================== */
+
+	/* === 25 x 4 === */
+
+	.columns {
+		&.span-25x4 {
+			.column {
+				&.span-four {
+					width: 25%;
+					@media @mobile {
+						width: 50%;
+						margin: 0 0 10%;
+					}
+				}
+			}
+		}
+	}
+
+
+/*  ==============================
+	FIVE COLUMNS
+	============================== */
+
+	/* === 20 x 5 === */
+
+	.columns {
+		&.span-20x5 {
+			.column {
+				&.span-five-first {
+					width: 15%;
+					@media @tablet {
+						display: none;
+					}
+				}
+				&.span-five {
+					width: 21.2%;
+					@media @tablet {
+						width: 25%;
+					}
+					@media @mobile {
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+
+	// Five columns revised for new homepage partner bar
+
+	.columns {
+		&.span-20-5 {
+			.column {
+				&.span-5-first {
+					width: 25%;
+					margin-right: 0.5%;
+					@media @tablet {
+						display: none;
+					}
+				}
+				&.span-5 {
+					width: 18.5%;
+					@media @tablet {
+						width: 25%;
+					}
+					@media @mobile {
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+
+	/* === 13 x 20x3 x 27 === */
+
+	.columns.span-12-21x3-27 .column.span-five-first {
+		width: 13%;
+	}
+
+	.columns.span-12-21x3-27 .column.span-five {
+		width: 20%;
+	}
+
+	.columns.span-12-21x3-27 .column.span-five-last {
+		width: 27%;
+	}
+	
+
+// BK Bootstrap Column Styles
+
+//===============
+// Columns Widget
+//===============
+
+.responsivecolumns
+{
+	width: 100%;
+	display:block;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.responsivecolumns:before,
+.responsivecolumns:after 
+{
+    content: " ";
+    display: table;
+}
+
+.responsivecolumns:after 
+{
+    clear: both;
+}
+
+.responsivecolumns
+{
+    *zoom: 1;
+}
+
+.responsivecolumns .column
+{
+	display:block;
+	float:left;
+	min-height: 40px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/****************/
+/* One Column */
+/************/
+.columns-one div
+{
+	width: 100%;
+}
+
+/**************************/
+/* Two Columns: 50 - 50 */
+/**********************/
+.responsivecolumns .columns-two-left, /*default value*/
+.columns-two-50-50 .columns-two-left
+{
+	width: 48.5%;
+	margin-right: 1.5%;
+}
+.responsivecolumns .columns-two-right, /*default value*/
+.columns-two-50-50 .columns-two-right
+{
+	width: 48.5%;
+	margin-left: 1.5%;
+}
+
+@media only screen and (max-width: 479px) 
+{
+	.responsivecolumns .columns-two-left, /*default value*/
+	.columns-two-50-50 .columns-two-left
+	{
+		width: 100%;
+		margin-bottom: 7%;
+	}
+	.responsivecolumns .columns-two-right, /*default value*/
+	.columns-two-50-50 .columns-two-right
+	{
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+/**************************/
+/* Two Columns: 25 - 75 */
+/**********************/
+.columns-two-25-75 .columns-two-left
+{
+	width: 22%;
+	margin-right: 3%;
+    margin-left:0;
+}
+.columns-two-25-75 .columns-two-right
+{
+	width: 75%;
+    margin-left:0;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px)
+{
+	.columns-two-25-75 .columns-two-left
+	{
+		width: 48.5%;
+		margin-right: 1.5%;
+		margin-bottom: 7%;
+	}
+	.columns-two-25-75 .columns-two-right
+	{
+		width: 48.5%;
+		margin-left: 1.5%;
+	}
+}
+@media only screen and (max-width: 479px) 
+{
+	.columns-two-25-75 .columns-two-left
+	{
+		width: 100%;
+		margin-bottom: 7%;
+	}
+	.columns-two-25-75 .columns-two-right
+	{
+		width: 100%;
+	}
+}
+
+/**************************/
+/* Two Columns: 75 - 25 */
+/**********************/
+.columns-two-75-25 .columns-two-left
+{
+	width: 75%;
+	margin-right: 3%;
+    margin-left:0;
+}
+.columns-two-75-25 .columns-two-right
+{
+	width: 22%;
+    margin-left:0;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px)
+{
+	.columns-two-75-25 .columns-two-left
+	{
+		width: 48.5%;
+		margin-right: 1.5%;
+		margin-bottom: 7%;
+	}
+	.columns-two-75-25 .columns-two-right
+	{
+		width: 48.5%;
+		margin-left: 1.5%;
+	}
+}
+@media only screen and (max-width: 479px) 
+{
+	.columns-two-75-25 .columns-two-left
+	{
+		width: 100%;
+		margin-bottom: 7%;
+	}
+	.columns-two-75-25 .columns-two-right
+	{
+		width: 100%;
+	}
+}
+
+/**************************/
+/* Two Columns: 34 - 66 */
+/**********************/
+.columns-two-34-66 .columns-two-left
+{
+	width: 31%;
+	margin-right: 3%;
+    margin-left:0;
+}
+.columns-two-34-66 .columns-two-right
+{
+	width: 66%;
+    margin-left:0;
+}
+
+@media only screen and (max-width: 479px) 
+{
+	.columns-two-34-66 .columns-two-left
+	{
+		width: 100%;
+		margin-bottom: 7%;
+		margin-right: 0px;
+	}
+	.columns-two-34-66 .columns-two-right
+	{
+		width: 100%;
+	}
+}
+
+/**************************/
+/* Two Columns: 66 - 34 */
+/**********************/
+
+.columns-two-66-34 .columns-two-left
+{
+	width: 66%;
+	margin-right: 1.5%;
+}
+.columns-two-66-34 .columns-two-right
+{
+	width: 31%;
+    margin-left: 1.5%;
+}
+
+
+@media only screen and (max-width: 479px) 
+{
+	.columns-two-66-34 .columns-two-left
+	{
+		width: 100%;
+		margin-bottom: 7%;
+		margin-right: 0px;
+	}
+	.columns-two-66-34 .columns-two-right
+	{
+		width: 100%;
+		margin-left: 0px;
+	}
+}
+
+/*********************************/
+/* Three Columns: 33 - 34 - 33 */
+/*****************************/
+.responsivecolumns .columns-three-left, /* default */
+.columns-three-33-34-33 .columns-three-left
+{
+	width: 31%;
+	margin-right: 3%;
+	margin-bottom: 0;
+}
+.responsivecolumns .columns-three-middle, /* default */
+.columns-three-33-34-33 .columns-three-middle
+{
+	width: 32%;
+	margin-right: 3%;
+	margin-bottom: 0;
+}
+.responsivecolumns .columns-three-right, /* default */
+.columns-three-33-34-33 .columns-three-right
+{
+	width: 31%;
+	margin-right: 0%;
+	margin-bottom: 0;
+}
+@media only screen and (max-width: 480px) 
+{
+	.responsivecolumns .columns-three-left, /* default */
+	.columns-three-33-34-33 .columns-three-left
+	{
+		width: 100%;
+		margin-bottom: 7%;
+	}
+	.responsivecolumns .columns-three-middle, /* default */
+	.columns-three-33-34-33 .columns-three-middle
+	{
+		width: 100%;
+		margin-bottom: 7%;
+	}
+	.responsivecolumns .columns-three-right, /* default */
+	.columns-three-33-34-33 .columns-three-right
+	{
+		width: 100%;
+	}
+}
+
+/*********************************/
+/* Three Columns: 25 - 25 - 50 */
+/*****************************/
+.columns-three-25-25-50 .columns-three-left
+{
+	width: 22%;
+	margin-right: 3%;
+}
+.columns-three-25-25-50 .columns-three-middle
+{
+	width: 23.5%;
+	margin-right: 3%;
+}
+.columns-three-25-25-50 .columns-three-right
+{
+	width: 48.5%;
+}
+@media only screen and (max-width: 480px) 
+{
+	.columns-three-25-25-50 .columns-three-left
+	{
+		width: 100%;
+		margin-bottom: 7%;
+	}
+	.columns-three-25-25-50 .columns-three-middle
+	{
+		width: 100%;
+		margin-bottom: 7%;
+	}
+	.columns-three-25-25-50 .columns-three-right
+	{
+		width: 100%;
+	}
+}
+
+/*********************************/
+/* Three Columns: 50 - 25 - 25 */
+/*****************************/
+.columns-three-50-25-25 .columns-three-left
+{
+	width: 48.5%;
+	margin-right: 3%;
+}
+.columns-three-50-25-25 .columns-three-middle
+{
+	width: 23.5%;
+	margin-right: 3%;
+}
+.columns-three-50-25-25 .columns-three-right
+{
+	width: 22%;
+	margin-right: 0;
+}
+
+@media only screen and (max-width: 480px) 
+{
+	.columns-three-50-25-25 .columns-three-left
+	{
+		width: 100%;
+		margin-bottom: 7%;
+	}
+	.columns-three-50-25-25 .columns-three-middle
+	{
+		width: 100%;
+		margin-bottom: 7%;
+	}
+	.columns-three-50-25-25 .columns-three-right
+	{
+		width: 100%;
+	}
+}
+
+/************************************/
+/* Four Columns: 25 - 25 - 25 - 25*/
+/********************************/
+.responsivecolumns .columns-four-first, /* default */
+.columns-four-25-25-25-25 .columns-four-first
+{
+	width: 24.25%;
+	margin-right: 1%;
+}
+.responsivecolumns .columns-four-second, /* default */
+.columns-four-25-25-25-25 .columns-four-second
+{
+	width: 24.25%;
+	margin-right: 1%;
+}
+.responsivecolumns .columns-four-third, /* default */
+.columns-four-25-25-25-25 .columns-four-third
+{
+	width: 24.25%;
+	margin-right: 1%;
+}
+.responsivecolumns .columns-four-fourth, /* default */
+.columns-four-25-25-25-25 .columns-four-fourth
+{
+	width: 24.25%;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px)
+{
+	.responsivecolumns .columns-four-first, /* default */
+	.columns-four-25-25-25-25 .columns-four-first
+	{
+	   width: 48.5%;
+	   margin-right: 1.5%;
+	   margin-bottom: 5%;
+	}
+	.responsivecolumns .columns-four-second, /* default */
+	.columns-four-25-25-25-25 .columns-four-second
+	{
+	   width: 48.5%;
+	   margin-left: 1.5%;
+	   margin-right: 0;
+	   margin-bottom: 5%;
+	}
+	.responsivecolumns .columns-four-third, /* default */
+	.columns-four-25-25-25-25 .columns-four-third
+	{
+	   width: 48.5%;
+	   margin-right: 1.5%;
+	   margin-left: 0;
+	   margin-bottom: 5%;
+	   clear: both;
+	}
+	.responsivecolumns .columns-four-fourth, /* default */
+	.columns-four-25-25-25-25 .columns-four-fourth
+	{
+	   width: 48.5%;
+	   margin-left: 1.5%;
+	   margin-right: 0;
+	   margin-bottom: 5%;
+	}
+}
+@media only screen and (max-width: 480px)
+{
+	.responsivecolumns .columns-four-first, /* default */
+	.columns-four-25-25-25-25 .columns-four-first
+	{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 7%;
+	}
+	.responsivecolumns .columns-four-second, /* default */
+	.columns-four-25-25-25-25 .columns-four-second
+	{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 7%;
+	}
+	.responsivecolumns .columns-four-third, /* default */
+	.columns-four-25-25-25-25 .columns-four-third
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 7%;
+	}
+	.responsivecolumns .columns-four-fourth, /* default */
+	.columns-four-25-25-25-25 .columns-four-fourth
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 7%;
+	}
+}

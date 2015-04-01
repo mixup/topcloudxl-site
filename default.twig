@@ -1,0 +1,30 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<!-- CONTAINING PAGE WRAP-->
+<div class="page-wrap">
+
+	<div class="bk-pt-default">
+
+		{% include '/includes/rd-header--alt.twig' %}
+
+		<!-- SUB NAV BAR !-->
+		<section class="partners-subnav">
+		    <div class="container">
+		        <h2 class="heading-">{{ page.title }}</h2>
+		    </div>
+		</section>
+
+		<div class="container">
+		    {{zone('main')|raw}}
+		</div>
+
+	</div>
+
+	{% include '/includes/rd-footer.twig' %}
+
+<!-- END CONTAINING PAGE WRAP-->
+</div>
+
+{% endblock %}

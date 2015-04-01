@@ -1,0 +1,575 @@
+
+/* ===============================
+   RESPONSIVE STYLESHEET
+   =============================== */
+
+
+/* ===============================
+   THANK YOU PAGE
+   =============================== */
+
+.thankyou {
+	 padding: 3em 0;
+}
+
+.form-success span {
+	border-radius: 300px;
+	background: #63c6ae;
+	display: block;
+	margin: 30px auto 50px;
+	height: 300px;
+	width: 300px;
+}
+.form-success svg {
+   	display: block;
+   	margin: 0 auto;
+   	position: relative;
+   	top: 80px;
+}
+
+.check {
+  stroke-dasharray: 220px 220px;
+  stroke-dashoffset: 220px;
+  -webkit-transition: stroke-dashoffset 4.1s linear 0s;
+  transition: stroke-dashoffset 500ms ease-in-out;
+}
+
+
+/* ===============================
+   LOGIN - SIGNUP
+   =============================== */
+
+.signupform {
+	background-color: #f8f8f8;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    border: 1px solid #eaeaea;
+}
+
+.signupform h2 {
+    color: #ADADAD;
+    font-size: 18px;
+    padding: 16px 20px;
+    background-color: #eee;
+    border-bottom: 1px solid #E6E6E6;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-top-right-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-topright: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.signupform h2 span {
+    color: #968E8E;
+}
+
+.signupform h3 {
+    color: #929292;
+    font-size: 15px;
+    text-align: left;
+    line-height: 24px;
+}
+
+.signupform h3 span {
+    color: #fd9652;
+}
+
+.login-page-header {
+    text-align: center;
+}
+
+.signupform form {
+    padding: 30px 30px;
+    @media @mobile {
+    	padding: 30px 20px;
+    }
+}
+
+.widget.contactform form {
+	padding: 15px 0;
+}
+
+.signupform fieldset, .widget.contactform fieldset {
+	border: none;
+	padding: 0;
+}
+
+.signupform form label {
+    display: none;
+}
+
+.widget.contactform label {
+	color: @color-swatch4;
+	display: block;
+	margin-bottom: 12px;
+	margin-top: 5px;
+} 
+
+.signupform form input, .widget.contactform form input, .widget.contactform form textarea {
+    background-color: #ffffff;
+    border: 0;
+    width: 100%;
+    height: 48px;
+    margin: 0 0 10px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    border: 1px solid #dcdcdc;
+    text-indent: 12px;
+    font-family: proxima-nova;
+    font-weight: inherit;
+    color: #929292;
+    line-height: 26px;
+    letter-spacing: inherit;
+    font-size: 14px;
+}
+
+.widget.contactform form textarea {
+	min-height: 80px;
+}
+
+.signupform form input:focus, .widget.contactform form input:focus, .widget.contactform form textarea:focus {
+    outline: none;
+    background-color: #f8f8f8;
+    border: 1px solid #63c6ae;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.signupform form button {
+    float: left;
+    position: relative;
+    right: -4px;
+    border: 0;
+    font-family: 'proxima-nova-semibold';
+    padding: 10px 20px 7px;
+    margin-top: 0.25em;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    background-color: #63c6ae;
+    box-shadow: 0 3px 0 #5abca4;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+
+.widget.contactform form button {
+	float: left;
+    position: relative;
+    border: 0;
+    font-family: 'proxima-nova-semibold';
+    padding: 10px 20px 7px;
+    margin-top: 0.25em;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    background-color: #63c6ae;
+    box-shadow: 0 3px 0 #5abca4;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+
+.signupform form button:focus, .signupform form button:hover, .widget.contactform form button:hover  {
+	background-color: #5abca4;
+    outline: none;
+}
+
+@media only screen and (max-width: 470px) {
+    .form-container {
+        width: 90%;
+        height: 392px;
+        position: absolute;
+        left: 5%;
+        top: 30px;
+        margin: 0 auto;
+        display: block;
+    }
+    form.login-form input {
+        width: 100%;
+    }
+    .main-form h3 {
+        padding-bottom: 20px;
+    }
+}
+
+.com {
+	.signupform form {
+		input {
+			margin-bottom: 0;
+			margin-right: 2%;
+			width: 75%;
+			@media only screen and (max-width: 1058px) {
+				width: 100%;
+			}
+			&:focus {
+				background-color: #ffffff;
+			}
+		}
+		button {
+			float: none;
+			font-size: 14px;
+			padding: 10px 15px 7px;
+			right: 0;
+			@media only screen and (max-width: 1058px) {
+				padding: 9px 20px 6px;
+			}
+		}
+	}
+	&.column.span-two-right  {
+		@media only screen and (max-width: 767px) {
+			margin-left: 0!important;
+			margin-top: 2.5em;
+			width: 100%!important;
+		}
+	}
+}
+
+.widget.contactform {
+	fieldset {
+		border: 0;
+	}
+}
+
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+footer {
+	background-color: darken(@color-swatch7,5%);
+	padding: 4em 0 1.3em;
+	@media @mobile {
+		padding: 3em 0 1em;
+	}
+	h4.h4white {
+		width: 100%;
+		margin-bottom: 2em;
+		font-size: 18px;
+		line-height: 20px;
+		text-transform: none;
+		letter-spacing: 0;
+	}
+	.arrow_box {
+		background-color: #616161;
+		&:after {
+			border-right-color: #616161;
+		}
+		h4 {
+			margin-bottom: 0;
+			color: #B4B4B4;
+		}
+	}
+	.footer-menu {
+		li {
+			padding: 0 0 0.8em;
+
+			a {
+				font-size: @font-swatch5-font-size;
+				color: #909090;
+				text-decoration: none;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+
+				&:hover {
+					color: @color-swatch1;
+				}
+
+				i {
+					margin-left: 8px;
+				}
+
+				.fade-out {
+					a {
+						@media @tablet {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		&.half {
+			width: 50%;
+			float: left;
+			@media @mobile {
+				width: 100%;
+			}
+		}
+	}
+	.footer2 {
+		padding: 4em 0 0;
+		@media @mobile {
+			padding: 3em 0 0;
+		}
+
+		p {
+			font-size: 14px;
+			color: #6c6c6c;
+			@media @tablet {
+				font-size: 13px;
+			}
+		}
+
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
+			text-align: right;
+		}
+	}
+	.footer-clear {
+		@media @mobile {
+			clear: both;
+		}
+	}
+}
+
+// Mix Panel
+.mixpanel {
+	position: relative; 
+	top: 20px;
+	@media @mobile {
+		top: 10px;
+	}
+}
+
+
+/* ===============================
+   ABOUT US
+   =============================== */
+
+
+.who-we-are {
+ 	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+	background-image: image('/images/about-team.jpg');
+ 	background-color: #3c3c3c;
+ 	background-position: center center;
+ 	background-repeat: no-repeat;
+ 	min-height: 300px;
+ 	max-height: 450px;
+ 	text-align: center;
+ 	h2, p {
+ 		margin: 0 auto;
+ 		max-width: 80%;
+ 		@media @mobile {
+ 			max-width: 90%;
+ 		}
+ 	}
+ 	h2 {
+ 		color: @white;
+ 		display: block;
+ 		&:after {
+ 			border: 1px solid grey;
+ 			content: "";
+ 			display: block;
+ 			margin: 15px auto 10px;
+ 			position: relative;
+ 			width: 80px;
+ 		}
+ 	}
+ 	p {
+ 		color: lighten(@color-swatch5, 15%);
+ 	}
+ }
+
+ .key-players {
+ 	text-align: center;
+ 	hgroup {
+ 		margin-bottom: 65px;
+ 		@media @mobile {
+ 			margin-bottom: 35px;
+ 		}
+ 		h5 {
+ 			margin: 0 auto;
+ 			max-width: 72%;
+ 			@media @mobile {
+ 				max-width: 90%;
+ 			}
+ 		}
+ 	}
+ 	.res-col {
+ 		position: relative;
+ 	}
+ 	.profile {
+ 		@media @mobile {
+ 			margin-bottom: 20px!important;
+ 			&:last-child {
+ 				margin-bottom: 0;
+ 			}
+ 		}
+ 		h3 {
+ 			margin-bottom: 20px;
+ 		}
+ 		p {
+ 			padding: 0 35px 10px;
+ 		}
+ 	}
+ 	.profile-img {
+ 		.border-radius(250px);
+ 		margin: 10px auto 32px;
+ 		height: 225px;
+ 		width: 225px;
+ 		position: relative;
+ 		-webkit-transition: all .5s ease-in;
+	    -moz-transition: all .5s ease-in;
+	    -o-transition: all .5s ease-in;
+	    transition: all .5s ease-in;
+ 		img {
+ 			background-size: 225px;
+ 			-webkit-transition: opacity .5s ease-out;
+		    -moz-transition: opacity .5s ease-out;
+		    -o-transition: opacity .5s ease-out;
+		    transition: opacity .5s ease-out;
+ 		}
+ 		ul.social {
+ 			display: block;
+			position: absolute;
+			opacity: 0;
+			top: 41%;
+			width: 100%;
+			-webkit-transition: opacity .5s ease-out;
+		    -moz-transition: opacity .5s ease-out;
+		    -o-transition: opacity .5s ease-out;
+		    transition: opacity .5s ease-out;
+ 			li {
+ 				display: inline-block;
+ 				&:first-child {
+ 					margin-right: 7px;
+ 				}
+ 				a {
+ 					display: block;
+ 					width: 38px;
+ 					height: 38px;
+ 					opacity: 0.88;
+ 					-webkit-transition: opacity .25s ease-out;
+				    -moz-transition: opacity .25s ease-out;
+				    -o-transition: opacity .25s ease-out;
+				    transition: opacity .25s ease-out;
+ 					&:hover, &:focus {
+ 						opacity: 1;
+ 					}
+ 				}
+	 			#profile-twitter {
+	 				background-image: image('/images/profile-twitter.png');	
+	 			}
+	 			#profile-linkedin {
+	 				background-image: image('/images/profile-linkedin.png');	
+	 			}
+ 			}
+ 		}
+ 		&:hover, &:focus {
+ 			background-color: @rd-blue;
+ 			-webkit-transition: background-color .5s ease-in;
+		    -moz-transition: background-color .5s ease-in;
+		    -o-transition: background-color .5s ease-in;
+		    transition: background-colorall .5s ease-in;
+ 			ul.social {
+	 			opacity: 1;
+ 			}
+ 			img {
+	 			opacity: 0.3;
+	 			-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: grayscale(100%);
+	 		}
+ 		}
+ 	}
+ 	h3 span {
+ 		font-size: 24px;
+ 		margin-left: 6px;
+ 	}
+}
+
+/*#simon {
+	background-image: image('/images/profile-simon.png');		
+}
+#richard {
+	background-image: image('/images/profile-richard.png');		
+}
+#juan {
+	background-image: image('/images/profile-juan.png');		
+}
+#gordon {
+	background-image: image('/images/profile-gordon.png');		
+}
+#golda {
+	background-image: image('/images/profile-golda.png');		
+}
+#thomas {
+	background-image: image('/images/profile-thomas.png');		
+}*/
+
+.investor {
+	padding: 0 0 5em;
+}
+
+hr.divider-cross {
+ 	border: none;
+ 	display: block;
+ 	float: left;
+ 	width: 100%;
+	&:before, &:after {
+		content: "";
+	}
+	&:before {
+		background: rgba(255,255,255,1);
+		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 25%, rgba(229,229,229,1) 50%, rgba(235,235,235,1) 75%, rgba(255,255,255,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(25%, rgba(235,235,235,1)), color-stop(50%, rgba(229,229,229,1)), color-stop(75%, rgba(235,235,235,1)), color-stop(100%, rgba(255,255,255,1)));
+		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 25%, rgba(229,229,229,1) 50%, rgba(235,235,235,1) 75%, rgba(255,255,255,1) 100%);
+		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 25%, rgba(229,229,229,1) 50%, rgba(235,235,235,1) 75%, rgba(255,255,255,1) 100%);
+		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 25%, rgba(229,229,229,1) 50%, rgba(235,235,235,1) 75%, rgba(255,255,255,1) 100%);
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 25%, rgba(229,229,229,1) 50%, rgba(235,235,235,1) 75%, rgba(255,255,255,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+		position: absolute;
+		height: 100%;
+		width: 1px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 0;
+	}
+	&:after {
+		background: rgba(255,255,255,1);
+		background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 25%, rgba(229,229,229,1) 50%, rgba(235,235,235,1) 75%, rgba(255,255,255,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(25%, rgba(235,235,235,1)), color-stop(50%, rgba(229,229,229,1)), color-stop(75%, rgba(235,235,235,1)), color-stop(100%, rgba(255,255,255,1)));
+		background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 25%, rgba(229,229,229,1) 50%, rgba(235,235,235,1) 75%, rgba(255,255,255,1) 100%);
+		background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 25%, rgba(229,229,229,1) 50%, rgba(235,235,235,1) 75%, rgba(255,255,255,1) 100%);
+		background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 25%, rgba(229,229,229,1) 50%, rgba(235,235,235,1) 75%, rgba(255,255,255,1) 100%);
+		background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 25%, rgba(229,229,229,1) 50%, rgba(235,235,235,1) 75%, rgba(255,255,255,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+		display: block;
+		height: 1px;
+		margin: 30px 0;
+		width: 100%;
+	}
+	@media @mobile {
+		display: none;
+	}
+}

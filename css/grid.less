@@ -1,0 +1,120 @@
+// ----------------------------
+// BaseKit Website: LESS > Grid
+// ----------------------------
+
+.row {
+	width: 100%;
+	.clearfix;
+}
+
+.grid-item {
+	display: inline-block;
+	vertical-align: middle;
+
+	@media @laptopSml {
+		display: block;
+	}
+}
+
+
+// -------------------
+// #Flexbox Grid Items
+// -------------------
+
+
+.flex-container {
+
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+	// Space Between
+	// -------------
+
+	// Uses flexbox to give equal space between
+	// any elements inside '.span-grid--space'
+
+	&.span-grid--space {
+		-ms-flex-pack: justify;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+
+		@media @laptopSml {
+			display: block;
+
+			&.strict {
+				display: -webkit-box;
+			    display: -moz-box;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    display: flex;
+			}
+		}
+	}
+
+	// Stretch
+	// -------------
+
+	// Uses flexbox to stretch items within container
+
+	&.span-grid--space-fixed {
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-ms-flex-pack: justify;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+
+		margin-left: -50px;
+
+		@media @desktop {
+			margin-left: -30px;
+		}
+		@media @laptopSml {
+			margin-left: -20px;
+		}
+
+		.flex-item {
+			-ms-flex: 1 1 200px;
+			-webkit-flex: 1 1 200px;
+			flex: 1 1 200px;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-ms-flex-direction: column;
+			-webkit-flex-direction: column;
+			flex-direction: column;
+
+		    margin: 0 0 50px 50px;
+
+		    @media @desktop {
+				margin: 0 0 30px 30px;
+			}
+			@media @laptop {
+				margin: 0 0 20px 20px;
+			}
+		}
+	}
+
+	// Add '.vac' to vertically align to center
+	&.vac {
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	// Add '.vae' to vertically align to end
+	&.vae {
+		-webkit-box-align: flex-end;
+		-webkit-align-items: flex-end;
+		-ms-flex-align: flex-end;
+		align-items: flex-end;
+	}
+
+}

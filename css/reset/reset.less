@@ -1,0 +1,48 @@
+// --------------------
+// CORE: Resets
+// --------------------
+
+@import "@{templateLocal}/css/reset/normalize.less"; // Normalize CSS
+@import "@{templateLocal}/css/reset/typeset.less";   // Typeset CSS
+
+
+// General Resets
+// --------------
+
+*, *:before, *:after {
+   -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing:        border-box;   /* Everything else */
+}
+img {
+	max-width: 100%;
+}
+img a {
+	border: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+button {
+	border: 0;
+}
+
+
+// BaseKit Resets
+// --------------
+
+.widget {
+	position: relative;
+}
+
+.bk-zone {
+	min-height: 40px;
+}
+

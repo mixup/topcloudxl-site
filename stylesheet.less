@@ -1,0 +1,1032 @@
+// --------------------------------
+// BaseKit Website: Main Stylesheet
+// --------------------------------
+
+
+// -----------------------------
+// Table of Contents
+// -----------------------------
+
+// #LESS Includes
+// #Media Queries
+// #Page Settings
+
+// #RD Feature
+// #RD Header
+// #RD Navigation
+// #RD Footer
+// #RD Partner Bar
+
+// #Sections
+// #Section: Templates
+// #Section: Benefits
+
+
+// -----------------------------
+// #LESS Includes
+// -----------------------------
+
+// Old BaseKit Stylesheet - DO NOT REMOVE
+@import "@{templateLocal}/css/legacy-stylesheet.less";
+
+
+// Site Imports
+@import "@{templateLocal}/css/reset/reset.less";
+@import "@{templateLocal}/css/type-components.less";
+@import "@{templateLocal}/css/rescols.less";
+@import "@{templateLocal}/css/grid.less";
+@import "@{templateLocal}/css/vimeo-lightbox.less";
+@import "@{templateLocal}/css/owl.carousel.less";
+
+// Page Imports
+@import "@{templateLocal}/css/404.less";
+@import "@{templateLocal}/css/careers.less";
+@import "@{templateLocal}/css/partners.less";
+@import "@{templateLocal}/css/blog.less";
+
+@import "@{templateLocal}/css/developers.less";
+@import "@{templateLocal}/css/login.less";
+
+
+
+
+// -----------------------------
+// #Media Queries
+// -----------------------------
+
+@desktop:     ~"only screen and (max-width: 1200px)";
+@laptop:      ~"only screen and (max-width: 1024px)";
+@laptopSml:   ~"only screen and (max-width: 850px)";
+@tablet:      ~"only screen and (max-width: 768px)";
+@true-mobile: ~"only screen and (max-width: 650px)";
+@mobile:      ~"only screen and (max-width: 479px)";
+@mobileSml:   ~"only screen and (max-width: 380px)";
+
+
+
+
+// -----------------------------
+// #Page Settings
+// -----------------------------
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: @white;
+}
+
+.page-content {
+	background-color: @white;
+	overflow: hidden;
+}
+
+
+
+// Start RD Page Content
+// ---------------------
+
+
+// Page Containers
+// ---------------
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+
+	@media @laptop {
+		width: 85%;
+	}
+}
+
+.container-sml {
+	max-width: 960px;
+	margin: 0 auto;
+
+	@media @laptop {
+		width: 85%;
+	}
+}
+
+
+
+
+// -----------------------------
+// #RD Video
+// -----------------------------
+
+// Video Wrapper
+.rd-video-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+// Video Element
+.rd-video {
+	max-height: 960px;
+
+	@media @laptopSml {
+		max-height: 100%;
+	}
+	@media @true-mobile {
+		display: none;
+	}
+}
+
+// Video Poster
+.rd-video-poster {
+	display: none;
+
+	width: 100%;
+	max-height: 960px;
+	background-image: image('/images/rd-images/rd-feature-bg.jpg');
+	background-position: 60% 0%;
+	background-size: cover;
+
+	@media @true-mobile {
+		display: block;
+	}
+}
+
+// Feature Content
+.rd-video-content {
+  	position: absolute;
+  	top: 0;
+
+  	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	background-color: rgba(31, 27, 18, 0.62);
+
+	.wp-button.green {
+		margin-right: 10px;
+	}
+}
+
+.rd-video-content-wrapper {
+	position: relative;
+	padding-bottom: 75px;
+
+	@media (max-width: 520px) {
+		max-width: 370px;
+	}
+	@media @mobile {
+		padding-bottom: 0;
+	}
+}
+
+
+// Video Content Typography
+// ------------------------
+
+.rd-video-title {
+	max-width: 700px;
+
+	font-size: 90px;
+	font-weight: 700;
+	line-height: 90px;
+	color: @white;
+
+	@media @laptop {
+		font-size: 70px;
+		line-height: 70px;
+	}
+	@media @true-mobile {
+		font-size: 60px;
+		line-height: 60px;
+	}
+	@media @mobile {
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	br:first-child {
+		display: none;
+	}
+}
+
+.rd-video-subtitle {
+	margin-top: 10px;
+
+	@media @laptopSml {
+		font-size: 21px;
+		line-height: 34px;
+	}
+	@media @mobile {
+		font-size: 19px;
+		line-height: 30px;
+
+		br {
+			display: none;
+		}
+	}
+}
+
+
+// Play Button
+// -----------
+
+.play-button {
+	position: absolute;
+	top: 32%;
+	right: 20%;
+	display: block;
+
+	opacity: 0.7;
+	width: 96px;
+	height: 96px;
+	background-image: image('/images//rd-images/play-button.png');
+	background-image: image('/images//rd-images/play-button.svg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: transparent;
+	text-indent: -9999px;
+
+	@media @laptop {
+		right: 0;
+		width: 86px;
+		height: 86px;
+	}
+	@media @tablet {
+		position: relative;
+		right: 0;
+		width: 70px;
+		height: 70px;
+		margin-top: 44px;
+	}
+	@media @mobile {
+		margin-top: 0;
+		width: 50px;
+		height: 50px;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+
+// WHD Logo
+// -----------
+
+.whd-logo-wrapper {
+	position: absolute;
+	bottom: 110px;
+	right: 5%;
+	max-width: 230px;
+
+	@media @mobile {
+		bottom: 20px;
+		left: 7.5%;
+		max-width: 180px;
+	}
+}
+.whd-logo-text {
+	margin-bottom: 16px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #B5B5B5;
+	text-align: right;
+
+	@media @laptopSml {
+		color: transparent;
+	}
+}
+.whd-logo-img {
+	filter: drop-shadow(0 0 10px rgba(0,0,0,0.2));
+  	-webkit-filter: drop-shadow(0 0 10px rgba(0,0,0,0.2));
+}
+
+
+
+
+// -----------------------------
+// #RD Header
+// -----------------------------
+
+.rd-header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+
+	padding: 30px 0;
+	background-color: transparent;
+
+	.flex-container {
+		position: relative;
+
+		@media @lpatopSml {
+			position: initial;
+		}
+	}
+
+	@media @mobile {
+		padding-top: 20px;
+	}
+}
+
+
+// RD Logo
+// ----------
+
+.rd-logo {
+	max-width: 130px;
+	height: 32px;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+.rd-logo-link {
+	position: relative;
+	z-index: 99999;
+	line-height: 0;
+}
+
+
+
+
+// -----------------------------
+// #RD Navigation
+// -----------------------------
+
+.rd-nav-main {
+	display: block;
+
+	@media @laptopSml {
+		max-height: 0;
+	    opacity: 0;
+	    overflow: hidden;
+	    height: 100%;
+		padding: 90px 30px 0 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		visibility: hidden;
+	}
+
+	&.open {
+		@media @laptopSml {
+			background-color: rgba(31, 27, 18, 0.9);
+			min-height: 1000px;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+// So Navigation Links Transition in Smoothly
+.rd-nav-main.open .rd-nav-item {
+	opacity: 1;
+}
+
+
+// Navigation Item
+// ---------------
+
+.rd-nav-item {
+	display: inline-block;
+	margin-left: 50px;
+
+	@media @laptopSml {
+		display: block;
+		opacity: 0;
+
+		&:last-child {
+			margin: 15px 0 20px 20px;
+		}
+	}
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+
+// Navigation Link
+// ---------------
+
+.rd-nav-link {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: @nav-link;
+	text-decoration: none;
+	.transition(0);
+
+	@media @laptopSml {
+		display: block;
+		padding: 12px 0;
+	}
+
+	&:hover {
+		color: @white;
+	}
+}
+.rd-nav-main.open {
+	.rd-nav-link {
+		font-size: 24px;
+	}
+	.button {
+		font-size: 20px;
+		.transition(0);
+	}
+}
+
+
+// Toggle Navigation
+// -----------------
+
+.rd-nav-menu {
+	text-align: right;
+}
+
+
+// Menu Toggle
+// -----------
+
+.rd-menu-toggle {
+	display: none;
+	position: relative;
+	height: 32px;
+	cursor: pointer;
+
+	@media @laptopSml {
+		display: block;
+		position: absolute;
+		top: 16px;
+		right: 30px;
+		z-index: 99999;
+	}
+}
+.rd-menu-icon {
+	margin: 0;
+	position: relative;
+}
+.rd-menu-icon:before,
+.rd-menu-icon:after {
+	position: absolute;
+	content: '';
+}
+.rd-menu-icon,
+.rd-menu-icon:before,
+.rd-menu-icon:after {
+	display: inline-block;
+	width: 30px;
+	height: 3px;
+	background-color: @white;
+	border-radius: 2px;
+
+	transition: all, 0.5s, ease-in-out;
+}
+.rd-menu-icon:before {
+	margin-top: -7px;
+}
+.rd-menu-icon:after {
+	margin-top: 7px;
+}
+
+.rd-menu-toggle.open .rd-menu-icon {
+	background-color: transparent;
+	&:before {
+		margin-top: 0;
+		top: 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	&:after {
+		bottom: 0;
+		margin-top: 0;
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+}
+
+
+
+// -----------------------------
+// #RD Header: Alt
+// ----------------------------
+
+.rd-header.alt {
+	position: relative;
+	padding: 20px 0;
+	background-color: @white;
+
+	@media @laptopSml {
+		padding: 25px 0;
+	}
+
+	// RD Main Nav
+	.rd-nav-main {
+		@media @laptopSml {
+			position: fixed;
+
+			&.open {
+				min-height: 100%;
+
+				.rd-nav-link {
+					color: darken(@grey-light, 25%);
+
+					&:hover {
+						color: darken(@grey-light, 5%);
+					}
+				}
+			}
+		}
+	}
+
+	// RD Logo Link {
+	.rd-logo-link {
+		&.open {
+			background: image('/images/rd-images/rd-logo.svg') no-repeat;
+			display: block;
+			height: 36px;
+			width: 130px;
+			img {
+				display: none;
+				visibility: hidden;
+			}
+		}
+	}
+
+	// RD Nav Link
+	.rd-nav-link {
+		color: #747474;
+
+		&:hover {
+			color: @heading-color;
+		}
+	}
+
+	// Menu Icon
+	.rd-menu-icon,
+	.rd-menu-icon:before,
+	.rd-menu-icon:after {
+		background-color: @grey-dark;
+	}
+
+	.rd-menu-toggle {
+		&.open {
+			.rd-menu-icon {
+				background-color: transparent;
+			}
+			.rd-menu-icon:before,
+			.rd-menu-icon:after {
+				background-color: white;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+// -----------------------------
+// #RD Footer
+// -----------------------------
+
+.rd-footer,
+.rd-sub-footer {
+	padding: 0;
+	background-color: transparent;
+}
+.rd-footer .flex-item {
+	@media @laptopSml {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		margin-right: -4px;
+	}
+	@media @mobile {
+		display: block;
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+// Footer List
+.rd-footer-list {
+	@media @laptopSml {
+		padding-bottom: @section-padding-sml;
+	}
+}
+.dual-list li {
+	display: inline-block;
+	width: 50%;
+	margin-right: -4px;
+
+	@media @laptopSml {
+		display: block;
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+// Footer List Item
+.rd-footer-list-item {
+	padding-top: 14px;
+
+	.mixpanel {
+		top: 5px;
+	}
+}
+
+// Footer Link
+.rd-footer-link {
+	color: @body-text;
+
+	&:hover {
+		color: @grey-dark;
+	}
+}
+
+
+// Sub Footer
+// ----------
+
+.rd-sub-footer {
+	padding-top: @section-padding-med;
+
+	@media @true-mobile {
+		padding-top: 0;
+	}
+}
+
+// Copyright Text
+.rd-copyright-text {
+	font-size: 16px;
+	line-height: 28px;
+
+	@media @true-mobile {
+		margin-top: 20px;
+	}
+}
+
+
+
+// -----------------------------
+// #RD Partner Bar
+// -----------------------------
+
+// Partner Bar
+.rd-partner-bar {
+	position: absolute;
+	bottom: 0;
+	z-index: 999999;
+
+	width: 100%;
+	background-color: @white;
+
+	@media @mobile {
+		display: none;
+	}
+}
+
+// Partner Bar List
+.partner-bar-list {
+	display: table;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+// Partner Bar List Item
+.partner-bar-list-item {
+	display: table-cell;
+	vertical-align: middle;
+	height: 70px;
+	background-repeat: no-repeat;
+	text-align: center;
+
+	@media @laptopSml {
+		&:last-child {
+			display: none;
+		}
+	}
+	@media @true-mobile {
+		&:nth-child(2n) {
+			display: none;
+		}
+	}
+}
+
+// Sprite Items
+.partner-bar-list-item .sprite-item {
+	display: block;
+	width: 111px;
+	height: 38px;
+	margin: 0 auto;
+	background-image: image('/images/rd-images/partner-bar-sprite.png');
+
+	// Host Europe
+	&.host-europe {
+		background-position: 0 0;
+	}
+	// Enom
+	&.enom {
+		background-position: -111px 0;
+	}
+	// Telefonica
+	&.telefonica {
+		background-position: -222px 0;
+	}
+	// KPN
+	&.kpn {
+		background-position: -333px 0;
+	}
+	// Home PL
+	&.home-pl {
+		background-position: -444px 0;
+	}
+}
+
+.partner-bgs {
+	border-top: 5px solid;
+
+	&.home-pl {
+		border-color: #ff0000;
+	}
+	&.kpn {
+		border-color: #82a612;
+	}
+	&.host-europe {
+		border-color: #f7bb1d;
+	}
+	&.telefonica {
+		border-color: #104c5d;
+	}
+	&.movistar {
+		border-color: #095B81;
+	}
+	&.enom {
+		border-color: #1f4987;
+	}
+}
+
+
+
+
+// -----------------------------
+// #Sections
+// -----------------------------
+
+.section {
+	padding: @section-padding 0;
+
+	@media @laptop {
+		padding: @section-padding-med 0;
+	}
+	@media @mobile {
+		padding: @section-padding-sml 0;
+	}
+}
+
+// Grey Section
+.section.alt {
+	background-color: @grey-light;
+}
+
+
+// Section Text
+// ------------
+
+.section-text p {
+	max-width: 410px;
+
+	@media @laptopSml {
+		max-width: 100%;
+	}
+}
+.section-text.alt h2.space--none {
+	@media @laptopSml {
+		padding-bottom: 20px;
+	}
+}
+
+
+
+// Adobe Edge Animation Overrides
+// ------------------------------
+
+.section-graphic {
+	@media @laptop {
+		width: 100%;
+	}
+}
+
+@media @laptopSml {
+	.fb-onboarding .flow-wrapper {
+		max-height: 550px!important;
+	}
+	.mobile-editor .flow-wrapper {
+		max-height: 580px!important;
+	}
+	.online-store {
+		.center-wrapper {
+			left: -20px!important;
+		}
+		.flow-wrapper {
+			max-height: 620px!important;
+		}
+	}
+}
+
+.center-wrapper {
+	right: 5%!important;
+	left: inherit!important;
+	margin: 0!important;
+
+	@media (max-width: 1460px) {
+		position: relative!important;
+	}
+	@media @laptopSml {
+		position: absolute!important;
+		transform: scale(0.8);
+	}
+}
+
+
+
+
+// -----------------------------
+// #Section: Templates
+// -----------------------------
+
+// Template Carousel
+.template-carousel {
+	padding-top: @section-padding;
+
+	@media @laptopSml {
+		padding-top: @section-padding-med;
+	}
+	@media @true-mobile {
+		padding-top: @section-padding-sml;
+	}
+}
+
+// Carousel Slide
+.template-carousel-slide {
+	padding: 50px;
+	background-color: @grey-light;
+
+	@media @laptop {
+		padding: 36px;
+	}
+	@media @mobile {
+		padding: 20px;
+	}
+}
+
+// Slide Image
+.template-carousel-slide img {
+	box-shadow: 0 0 20px rgba(110,110,110,0.1);
+}
+
+
+// Carousel Controls
+// -----------------
+
+.owl-controls {
+	padding-top: @section-padding-med;
+	text-align: center;
+	-webkit-tap-highlight-color: transparent;
+
+	@media @laptopSml {
+		padding-top: @section-padding-sml;
+	}
+}
+
+.owl-dot {
+	display: inline-block;
+	zoom: 1;
+}
+
+.owl-dot.active span,
+.owl-dot:hover span {
+ 	background: @rd-blue;
+}
+.owl-dot span {
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin: 0 6px;
+	background-color: darken(@grey-light,10%);
+	-webkit-backface-visibility: visible;
+	-webkit-transition: opacity 200ms ease;
+	-moz-transition: opacity 200ms ease;
+	-ms-transition: opacity 200ms ease;
+	-o-transition: opacity 200ms ease;
+	transition: opacity 200ms ease;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+
+
+
+// -----------------------------
+// #Section: Partner Logos
+// -----------------------------
+
+.rd-partner-logos {
+	padding: @section-padding 0 0;
+
+	@media @laptopSml {
+		padding: @section-padding-med 0 0;
+	}
+	@media @true-mobile {
+		padding: @section-padding-sml 0 0;
+	}
+}
+
+.partner-block-logo {
+	// max-width: 230px;
+}
+
+// Partner Logo Blocks
+.partner-block {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+	min-height: 200px;
+	padding: 0 20px;
+
+	@media @laptop {
+		min-height: 150px;
+	}
+
+	&.host-europe {
+		background-color: #f7bb1d;
+	}
+	&.reg123 {
+		background-color: #00a1e1;
+	}
+	&.telefonica {
+		background-color: #104c5d;
+	}
+	&.movistar {
+		background-color: #095B81;
+	}
+	&.enom {
+		background-color: #1f4987;
+	}
+	&.rightside {
+		background-color: #DC5034;
+	}
+	&.heart {
+		background-color: #353535;
+	}
+	&.fasthosts {
+		background-color: #33486D;
+	}
+	&.loopia {
+		background-color: #ad0100;
+	}
+	&.name {
+		background-color: #8fc530;
+	}
+	&.names {
+		background-color: #51B3E8;
+	}
+	&.isimtecil {
+		background-color: #fc7513;
+	}
+	&.hostalia {
+		background-color: #e31c23;
+	}
+}
+
+
