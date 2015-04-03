@@ -1,0 +1,357 @@
+{% extends "dev-layout.twig" %}
+
+{% block content %}
+
+<!-- CONTAINING PAGE WRAP-->
+<div class="page-wrap">
+  
+<!-- HEADER !-->
+{% include '/includes/rd-header--alt.twig' %}
+
+    <!-- DEVELOPER SIGNUP !-->
+    <section class="dev-feature">
+
+        <!-- INTRO TEXT !-->
+        <div class="dev-feature-text">
+            {{widget('content', 'dev-heading', {"content":'<h2>Hassle-free website building for developers</h2>'})|raw}}
+            {{widget('content', 'dev-sub-heading', {"content":'<p>Hosting packages and a flexible, powerful CMS, created with both developers and their clients in mind</p>'})|raw}}
+        </div>
+
+        <!-- FEATURE TABS !-->
+        <ul class="dev-feature-tabs">
+            <li class="dev-signup">
+                {{widget('content', 'dev-signup-heading', {"content":'<h3>Developer Signup</h3>'})|raw}}
+                {{widget('content', 'dev-signup-subheading', {"content":'<p>Design and build beautiful, fully <br>responsive websites.</p>'})|raw}}
+                <a href="/our-partners" class="button  green  sml">Sign Up Now</a>
+            </li>
+             <li class="help-support">
+                {{widget('content', 'dev-help-heading', {"content":'<h3>Help &amp; Support</h3>'})|raw}}
+                {{widget('content', 'dev-help-subheading', {"content":'<p>Useful online resources created by <br>our developer community.</p>'})|raw}}
+                <a href="http://docs.basekit.com" class="button  blue" target="_blank">View Documentation</a>
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- DEVELOPER LOVE SECTION !-->
+    <section class="dev-love">
+        <div class="container">
+
+            <!-- DEVELOPER LOVE TAB CONTENT !-->
+            <section class="dev-love-content clearfix">
+
+                <!-- TIME WASTING SECTION !-->
+                <article id="time-wasting">
+
+                <hgroup class="center">
+                    {{widget('content', 'time-wasting-header', {"content":'<h2>No Time Wasting</h2>'})|raw}}
+                    {{widget('content', 'time-wasing-subheading', {"content":'<p>A speedy setup, the tools you love and flawless way for your client to edit.</p>'})|raw}}
+                </hgroup>
+
+                    <!-- TIME WASTING TABS !-->
+                    <div id="time-tabs" class="clearfix">
+                        <ul class="time-tabs-list">
+                            <li>
+                                <a href="#time-content-1">
+                                    {{widget('content', 'time-list-heading-1', {"content":'<h5>Live editing</h5>'})|raw}}
+                                    {{widget('content', 'time-list-1', {"content":'<p>Drag and drop content without ever having to leave the editor.</p>'})|raw}}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#time-content-2">
+                                    {{widget('content', 'time-list-heading-2', {"content":'<h5>Edit / preview mode</h5>'})|raw}}
+                                    {{widget('content', 'time-list-2', {"content":'<p>Switch seamlessly between editing and previewing - without switching screens.</p>'})|raw}}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#time-content-3">
+                                    {{widget('content', 'time-list-heading-3', {"content":'<h5>Familiar technologies</h5>'})|raw}}
+                                    {{widget('content', 'time-list-3', {"content":'<p>If you can master HTML and CSS, using our editor will be simple.</p>'})|raw}}
+                                </a>
+                            </li>
+                            <li>
+                            <a href="#time-content-4">
+                                {{widget('content', 'time-list-heading-4', {"content":'<h5>Simple setup</h5>'})|raw}}
+                                {{widget('content', 'time-list-4', {"content":'<p>Choose a template. Download the template. Upload the template as a zip. Simple.</p>'})|raw}}
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- TIME WASTING TAB CONTENT !-->
+                        <div class="time-tabs-content" >
+                            <div id="time-content-1">
+                                <img src="{{asset('images/developers/dev_time-wasting--1.jpg')}}">
+                            </div>
+                            <div id="time-content-2">
+                                <img src="{{asset('images/developers/dev_time-wasting--2.jpg')}}">
+                            </div>
+                            <div id="time-content-3">
+                                <img src="{{asset('images/developers/dev_time-wasting--3.jpg')}}">
+                            </div>
+                            <div id="time-content-4">
+                                <img src="{{asset('images/developers/dev_time-wasting--4.jpg')}}">
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </section>
+        </div>
+    </section>
+
+
+     <!-- DEVELOPER HOSTING BENEFITS !-->
+    <section class="LightGrey dev-hosting-benefits">
+        <div class="container">
+            <hgroup class="center">
+                {{widget('content', 'dev-benefits-header', {"content":'<h2>Why host your site with our established partners?</h2>'})|raw}}
+            </hgroup>
+
+            <!-- HOSTING BENEFITS !-->
+            <div class="hosting-benefits-cards">
+
+                <article>
+                    <svg class="benefits-icon">
+                        <switch>
+                            <use xlink:href="#Mail"></use>
+                            <foreignObject>
+                                <img class="dev-icons" src="{{asset('/images/developers/email-extras.png')}}" alt="Email &amp; Domain Extras">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'dev-hosting-1', {"content":'<h3>Email and Domain <br>Name Extras</h3>'})|raw}}
+                </article>
+
+                <article>
+                    <svg class="benefits-icon">
+                        <switch>
+                            <use xlink:href="#Multiple"></use>
+                            <foreignObject>
+                                <img class="dev-icons" src="{{asset('/images/developers/uptime.png')}}" alt="Highest Uptime">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'dev-hosting-2', {"content":'<h3>Highest Levels of Uptime</h3>'})|raw}}
+                </article>
+
+                <article>
+                    <svg class="benefits-icon">
+                        <switch>
+                            <use xlink:href="#Speed"></use>
+                            <foreignObject>
+                                <img class="dev-icons" src="{{asset('/images/developers/bigger-bandwidth.png')}}" alt="Bigger &amp; Better Bandwidth">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'dev-hosting-3', {"content":'<h3>Bigger and Better Bandwidth</h3>'})|raw}}
+                </article>
+
+                <article>
+                    <svg class="benefits-icon">
+                        <switch>
+                            <use xlink:href="#Sell"></use>
+                            <foreignObject>
+                                <img class="dev-icons" src="{{asset('/images/developers/reseller-tools.png')}}" alt="Reseller Tools">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'dev-hosting-4', {"content":'<h3>Flexible Reseller <br>Tools</h3>'})|raw}}
+                </article>
+
+                <article>
+                    <svg class="benefits-icon">
+                        <switch>
+                            <use xlink:href="#Unlimited"></use>
+                            <foreignObject>
+                                <img class="dev-icons" src="{{asset('/images/developers/unlimited-db.png')}}" alt="Unlimited Databases">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'dev-hosting-5', {"content":'<h3>Unlimited Databases</h3>'})|raw}}
+                </article>
+
+                <article>
+                    <svg class="benefits-icon">
+                        <switch>
+                            <use xlink:href="#Secure"></use>
+                            <foreignObject>
+                                <img class="dev-icons" src="{{asset('/images/developers/secure-data.png')}}" alt="Secure Data Centeres">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'dev-hosting-6', {"content":'<h3>Secure Data Centers</h3>'})|raw}}
+                </article>
+
+                <article>
+                    <svg class="benefits-icon">
+                        <switch>
+                            <use xlink:href="#Award"></use>
+                            <foreignObject>
+                                <img class="dev-icons" src="{{asset('/images/developers/award-hosting.png')}}" alt="Award Winning Hosting">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'dev-hosting-7', {"content":'<h3>Award Winning Web Hosting Services</h3>'})|raw}}
+                </article>
+
+                <article>
+                    <svg class="benefits-icon">
+                        <switch>
+                            <use xlink:href="#Customers"></use>
+                            <foreignObject>
+                                <img class="dev-icons" src="{{asset('/images/developers/trusted-customers.png')}}" alt="Trusted by Millions">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'dev-hosting-8', {"content":'<h3>Trusted by Millions of Customers</h3>'})|raw}}
+                </article>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FLEXIBILITY CONTROL SECTION !-->
+    <section class="flexibility-control">   
+        <div class="container">
+
+        <!-- FLEXIBILITY TAB CONTENT !-->
+        <article class="res-col columns span-30-70" id="flexibility">
+
+        <hgroup class="center">
+            {{widget('content', 'flexibility-header', {"content":'<h2>Flexibility &amp; Control</h2>'})|raw}}
+            {{widget('content', 'flexbility-subheader', {"content":'<p>You decide exactly how much editing control you want to give your clients.</p>'})|raw}}
+        </hgroup>
+
+            <!-- FLEXIBILITY THREE SIMPLE STEPS !-->
+            <ul class="res-col columns span-30-31-30 dev-steps">
+                <li class="column span-three-left">
+                    <img src="{{asset('images/developers/our-themes.jpg')}}">
+                    {{widget('content', 'flex-steps-1', {"content":'<h3><b>Use</b> one of our templates</h3>'})|raw}}
+                    {{widget('content', 'flex-list-1', {"content":'<p>We have over 100 professionally designed templates ready for you to get started with ease.</p>'})|raw}}
+                </li>
+                <li class="column span-three-middle">
+                    <img src="{{asset('images/developers/tweak-themes.jpg')}}">
+                    {{widget('content', 'flex-steps-2', {"content":'<h3><b>Tweak</b> one of our templates</h3>'})|raw}}
+                    {{widget('content', 'flex-list-2', {"content":'<p>Take away the labour of starting from scratch and tailor-make one of our templates to suit your client.</p>'})|raw}}
+                </li>
+                <li class="column span-three-right">
+                    <img src="{{asset('images/developers/your-themes.jpg')}}">
+                    {{widget('content', 'flex-steps-3', {"content":'<h3><b>Create</b> your own templates</h3>'})|raw}}
+                    {{widget('content', 'flex-list-3', {"content":'<p>Create customised, semantic markup using the tools you love.</p>'})|raw}}
+                </li>
+            </ul>
+        </article>
+
+        </div>
+    </section>
+
+
+    <!-- CLIENT FRIENDLY SECTION !-->
+    <section class="client-friendly">
+        <div class="container">
+
+            <!-- CLIENT FRIENDLY TAB CONTENT !-->
+            <article id="client-friendly">
+
+                <hgroup class="center">
+                    {{widget('content', 'client-header', {"content":'<h2>Client Friendly Solutions</h2>'})|raw}}
+                    {{widget('content', 'client-header-subheading', {"content":'<p>Offer your clients simple and easy to use features with confidence.</p>'})|raw}}
+                </hgroup>
+
+            <ul class="client-friendly-cards">
+                <li>
+                    <svg class="client-friendly-icons large">
+                        <switch>
+                            <use xlink:href="#Simple"></use>
+                            <foreignObject>
+                                <img class="icon" src="{{asset('/images/developers/simple-cms.png')}}" alt="Simple CMS">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'client-list-heading-1', {"content":'<h3 class="heading--black">Simple CMS</h3>'})|raw}}
+                    {{widget('content', 'client-list-1', {"content":'<p>Clients can drag and drop text, images, forms, videos and social content quickly and easily to any page.</p>'})|raw}}
+                </li>
+                <!--<hr class="divider-cross"></hr>-->
+                <li>
+                    <svg class="client-friendly-icons large">
+                        <switch>
+                            <use xlink:href="#Responsive"></use>
+                            <foreignObject>
+                                <img class="icon" src="{{asset('/images/developers/fully-responsive.png')}}" alt="Fully Responsive">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'client-list-heading-2', {"content":'<h3 class="heading--black">Fully Responsive</h3>'})|raw}}
+                    {{widget('content', 'client-list-2', {"content":'<p>Clients can preview their site across multiple screen sizes and devices.</p>'})|raw}}
+                </li>
+                <!--<hr class="divider-cross"></hr>-->
+                <li>
+                    <svg class="client-friendly-icons">
+                        <switch>
+                            <use xlink:href="#Edit"></use>
+                            <foreignObject>
+                                <img class="icon" src="{{asset('/images/developers/live-editing.png')}}" alt="Unbreakable">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'client-list-heading-3', {"content":'<h3 class="heading--black">Live Editing</h3>'})|raw}}
+                    {{widget('content', 'client-list-3', {"content":'<p>Clients can instantly view any added content without leaving the editor.</p>'})|raw}}
+                </li>
+            </ul>
+
+            <ul class="client-friendly-cards">
+                <li>
+                    <svg class="client-friendly-icons">
+                        <switch>
+                            <use xlink:href="#Adaptable"></use>
+                            <foreignObject>
+                                <img class="icon" src="{{asset('/images/developers/adaptable.png')}}" alt="Adaptable">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'client-list-heading-4', {"content":'<h3 class="heading--black">Adaptable</h3>'})|raw}}
+                    {{widget('content', 'client-list-4', {"content":'<p>With ecommerce and blog features, your site can grow with their business.</p>'})|raw}}
+                </li>
+                <!--<hr class="divider-cross"></hr>-->
+                <li>
+                    <svg class="client-friendly-icons">
+                        <switch>
+                            <use xlink:href="#Support"></use>
+                            <foreignObject>
+                                <img class="icon" src="{{asset('/images/developers/support.png')}}" alt="Free Support">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'client-list-heading-5', {"content":'<h3 class="heading--black">Free Support</h3>'})|raw}}
+                    {{widget('content', 'client-list-5', {"content":'<p>We offer client support via Zendesk should you choose not to offer it as part of your package.</p>'})|raw}}
+                </li>
+                <!--<hr class="divider-cross"></hr>-->
+                <li>
+                    <svg class="client-friendly-icons">
+                        <switch>
+                            <use xlink:href="#Domains"></use>
+                            <foreignObject>
+                                <img class="icon" src="{{asset('/images/developers/domains.png')}}" alt="Easy Domains">
+                            </foreignObject>
+                        </switch>
+                    </svg>
+                    {{widget('content', 'client-list-heading-6', {"content":'<h3 class="heading--black">Easy Domains</h3>'})|raw}}
+                    {{widget('content', 'client-list-6', {"content":'<p>Our platform works with any domain name , whether old, new or bought from our partners.</p>'})|raw}}
+                </li>
+            </ul>
+        </article>
+
+    </div>
+</section>
+
+
+
+    <!-- FOOTER !-->
+    {% include '/includes/rd-footer.twig' %}
+
+<!-- END CONTAINING PAGE WRAP-->
+</div>
+
+{% endblock %}

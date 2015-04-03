@@ -1,0 +1,44 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<!-- CONTAINING PAGE WRAP-->
+<div class="page-wrap">
+
+    <div class="bk-pt-blog">
+
+        {% include '/includes/rd-header--alt.twig' %}
+
+        <!-- SUB NAV BAR !-->
+        <section class="partners-subnav">
+            <div class="container">
+                <div class="flex-container  span-grid--space  vac">
+
+                    <div class="flex-item">
+                       <h5 class="heading--white  space--none">Basekit Blog <p>Stay up to date with the latest product, community and technical news.</p></h5>
+                    </div>
+                    <div class="flex-item">
+                        {{widget('blogsearch', 'blogsearch', {})|raw}}
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--BLOG LIST !-->
+        <section class="main blog">
+            <div class="container-sml">
+                <div class="blogpost-zone">
+
+                    {{widget('blogpost', 'gefwfefwe', {})|raw}}
+                </div>
+        </section>
+
+    {% include '/includes/rd-footer.twig' %}
+
+    </div>
+
+<!-- END CONTAINING PAGE WRAP-->
+</div>
+
+{% endblock %}

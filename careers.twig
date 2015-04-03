@@ -1,0 +1,311 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<!-- CONTAINING PAGE WRAP-->
+<div class="page-wrap careers">
+
+{% include '/includes/rd-header--alt.twig' %}
+
+
+    <!-- JOIN BASEKIT !-->
+    <section class="careers-header">
+        <div class="container">
+            {{widget('content', 'join-heading', {"content":'<h2 class="heading--white  space--10">Join the BaseKit team</h2>'})|raw}}
+            {{widget('content', 'join-sub_heading', {"content":'<p>Create, learn, challenge, and discover.</p>'})|raw}}
+        </div>
+    </section>
+
+
+    <!-- WHY BASEKIT !-->
+    <section class="why-basekit  center">
+        <div class="container">
+            <hgroup>
+                {{widget('content', 'why-heading', {"content":'<h2>Why BaseKit?</h2>'})|raw}}
+            </hgroup>
+
+            <div class="res-col columns">
+                <div class="column span-100 profile">
+                    {{widget('content', 'why-basekit_content', {"content":'<p>The BaseKit team works with passion and ambition to build a web product that we can all be proud of. We work together to inspire each other, encourage personal progression and improve our work/life balance. With a rapidly expanding team of 50+ we take pride in our colleagues growing with us; we offer a friendly and welcoming environment, the opportunity to work with people with a wide range skills and talents, and the chance to really love what you do best.</p>'})|raw}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRENT VACANCIES !-->
+    <section class="current-vacancies  section  alt">
+        <div class="container">
+            <div class="res-col columns">
+                 <div class="column span-100">
+
+                     <hgroup>
+                        {{widget('content', 'vacancies-heading', {"content":'<h5>Current Vacancies</h5>'})|raw}}
+                    </hgroup>
+
+                    <ul class="vacancies">
+
+                        <!-- JOB 2 -->
+                        <li class="accordian-expand">
+                            {{widget('content', 'job-title-2', {"content":'<h4>Database Administrator</h4>'})|raw}}
+                            {{widget('content', 'job-location-2', {"content":'<span class="job-location">Bristol, UK</span>'})|raw}}
+                            <script type="text/javascript">
+                                //<![CDATA[
+                                <!--
+                                var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+                                "=51){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+                                ".substr(0,ol);}f(\")321,\\\"5=7\\\"\\\\(7i(:|hsr@>\\\\\\\\!220\\\\630\\\\73" +
+                                "0\\\\310\\\\730\\\\W030\\\\100\\\\620\\\\^230\\\\130\\\\520\\\\630\\\\100\\" +
+                                "\\Q630\\\\000\\\\230\\\\130\\\\130\\\\t\\\\H5U420\\\\520\\\\400\\\\010\\\\0" +
+                                "00\\\\BC<&2-,:w ;9765%pr\\\\m+'mn720\\\\'&+i2,/&1 \\\"\\\\771\\\\MP]_^XO130" +
+                                "\\\\OQZR710\\\\RS020\\\\CBO500\\\\^@CBUDFcQCOu$rhwsxu5J(rv`y0n2/$efl|ntr*wl" +
+                                "dm310\\\\630\\\\320\\\\730\\\\\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoC" +
+                                "rahCmorf.gnirtS=+o;721=%y;i=+y)321==i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\" +
+                                "\"=o,i rav{)y,x(f noitcnuf\")"                                               ;
+                                while(x=eval(x));
+                                //-->
+                                //]]>
+                            </script>
+                        </li>
+
+                        <div class="job-role">
+                            {{widget('content', 'job-information-2', {"content":'
+                             <ul class="job-information">
+                                <li><i class="icon fa-clock"></i>Full Time</li>
+                                <li><i class="icon fa-user"></i>Technology Infrastructure Team</li>
+                             </ul>
+                             '})|raw}}
+
+                            {{widget('content', 'job-description-2', {"content":'<p>You will be working with dynamic, friendly and forward-thinking Linux professionals and DBA’s in our infrastructure team. Your role will focus on making our infrastructure as wonderful as it can be and rolling out the BaseKit platform to our partners’ servers, being some of the biggest hosting companies in the world.</p>
+
+                            <h5>Key Responsibilities:</h5>
+                            <ul>
+                                <li>Supporting, maintaining, release planning and management of DB’s on our live environment.</li>
+                                <li>Building and management of DB’s on staging/development environments.</li>
+                                <li>Deploying and supporting our partners with the running of white label editions of the BaseKit Platform.</li>
+                                <li>Manage the backups of the production database environment.</li>
+                                <li>Analyse and optimise DB performance.</li>
+                                <li>Assess requirements and changes to database structure and data, and then plan the implementation of these changes.</li>
+                                <li>Rollout of database changes with the aim of minimising disruptions to production systems.</li>
+                                <li>Ensure referential integrity of both our databases and the databases of our customers.</li>
+                                <li>Ensure the security of the databases and control access.</li>
+                                <li>Proactive investigation and recommendation of improvements to the platform from both a technical and business perspective.</li>
+                                <li>Streamline working processes.</li>
+                                <li>Contribute to team documentation.</li>
+                                <li>Implementation and Maintenance of system monitoring.</li>
+                                <li>Planning our scalability and capacity in-line with our business expansion.</li>
+                                <li>Decision making and influencing strategies with regards to how things should/could be done.</li>
+                            </ul>
+
+                            <h5>Supervision Received:</h5>
+                             <ul>
+                                <li>Successful completion of 3 month probationary period.</li>
+                                <li>Annual appraisals.</li>
+                                <li>Responsible to Team Lead Infrastructure.</li>
+                            </ul>
+
+                            <h5>Desired Skills &amp; Experience:</h5>
+                             <ul>
+                                <li>At least 2 years experience working for a customer facing web based platform.</li>
+                                <li>Demonstratable experience of building and managing DB’s in a LAMP stack.</li>
+                                <li>Have great working knowledge of system monitoring tools Zabbix and Nagios.</li>
+                                <li>Have a sound understanding of Amazon Web Services - Amazon Cloudfront, EC2 and Load Balancing, S3/EBS, PHP and Rackspace Cloud services.</li>
+                                <li>Thrive being part of an inspirational team and actively play a part in taking initiative and getting things done.</li>
+                                <li>Enjoy technical challenges and come up with imaginative, inspiring ways of doing things.</li>
+                            </ul>
+
+                            <h5>Desired Qualifications:</h5>
+                             <ul>
+                                <li>Degree educated (Appropriate degree preferred).</li>
+                                <li>Deals with confidential information and/or issues using discretion and judgement.</li>
+                            </ul>'})|raw}}
+
+                        </div>
+
+                        <!-- JOB 3 -->
+                        <li class="accordian-expand">
+                            {{widget('content', 'job-title-3', {"content":'<h4>Junior First Line Customer Support (Spanish)</h4>'})|raw}}
+                            {{widget('content', 'job-location-3', {"content":'<span class="job-location">Bristol, UK</span>'})|raw}}
+                            <script type="text/javascript">
+                                //<![CDATA[
+                                <!--
+                                var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+                                "=51){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+                                ".substr(0,ol);}f(\")34,\\\"200\\\\010\\\\410\\\\730\\\\720\\\\n\\\\R530\\\\" +
+                                "r\\\\IC^]m520\\\\010\\\\uFBCWC300\\\\LUB2rq}vi9vxbaaq0M-|}l`h*+T~jutb/xc020" +
+                                "\\\\430\\\\730\\\\230\\\\410\\\\[$J220\\\\430\\\\TQ.430\\\\730\\\\410\\\\@1" +
+                                "30\\\\500\\\\000\\\\710\\\\230\\\\t\\\\500\\\\&310\\\\500\\\\710\\\\300\\\\" +
+                                "\\\\\\\\300\\\\<a038t-1<3&51220\\\\\\\"\\\\2 $w#?& )*d130\\\\y%'3(730\\\\_1" +
+                                "00\\\\630\\\\320\\\\TU]C_GC530\\\\F_UB[NCO\\\"(f};o nruter};))++y(^)i(tAedo" +
+                                "Crahc.x(edoCrahCmorf.gnirtS=+o;721=%y{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=" +
+                                "o,i rav{)y,x(f noitcnuf\")"                                                  ;
+                                while(x=eval(x));
+                                //-->
+                                //]]>
+                            </script>
+                        </li>
+
+                        <div class="job-role">
+
+                            {{widget('content', 'job-information-3', {"content":'
+                             <ul class="job-information">
+                                <li><i class="icon fa-clock"></i>Full Time</li>
+                                <li><i class="icon fa-user"></i>Support Team</li>
+                             </ul>
+                             '})|raw}}
+
+                            {{widget('content', 'job-description-3', {"content":'<p>The first line support team provides a point of contact for all customers with questions about BaseKit. In many cases you will be able to answer the customers questions directly but if you can’t you will have the second line team right there with you. The support team is based in the same office as our world-class development team, so lines of communication are short and there are plenty of opportunities for learning and professional growth. We also have members of the support team in various locations throughout the world - South America, North America and destinations throughout Europe.</p>
+
+                            <h5>Key Responsibilities:</h5>
+                            <ul>
+                                <li>Answering technical questions about BaseKit using Instant Messenger Chat, emails and screen-shares.</li>
+                                <li>Solving customer/partner tickets via Zendesk.</li>
+                                <li>Provide training to our partners.</li>
+                                <li>Assist the second line team in dealing with user issues.</li>
+                                <li>Creating a knowledge-base of tutorials, help docs and videos.</li>
+                                <li>Translating/localising BaseKit and our support documentation.</li>
+                                <li>Utilising the learning and experience from the role to advise BaseKit engineers and designers on how best to meet our user needs.</li>
+                                <li>Tracking all customers failing to renew as part of the retention plan and providing them with all the support needed to extend their subscriptions.</li>
+                                <li>Administration of Community forums.</li>
+                                <li>To provide support to partners and customers in either native or second language, being Russian, French, Spanish, Portugese or German.</li>
+                            </ul>
+
+                            <h5>Supervision Received:</h5>
+                             <ul>
+                                <li>Successful completion of 3 month probationary period.</li>
+                                <li>Annual appraisals.</li>
+                                <li>Responsible to Head of Support.</li>
+                            </ul>
+
+                            <h5>Desired Skills &amp; Experience:</h5>
+                             <ul>
+                                <li>Fluent in Spanish and English.</li>
+                                <li>Some experience of website creation using Dreamweaver, Wordpress or other common tools.</li>
+                                <li>Excellent communication skills.</li>
+                                <li>Basic knowledge of HTML and CSS.</li>
+                                <li>Knowledge of website hosting.</li>
+                                <li>Genuine enthusiasm for solving problems.</li>
+                                <li>Real desire to give great customer service at all times.</li>
+                            </ul>
+
+                            <h5>Desired Qualifications:</h5>
+                             <ul>
+                                <li>Degree educated (Appropriate degree preferred).</li>
+                                <li>Deals with confidential information and/or issues using discretion and judgement.</li>
+                            </ul>'})|raw}}
+
+                        </div>
+
+                        <!-- JOB 4 -->
+                        <li class="accordian-expand">
+                            {{widget('content', 'job-title-3', {"content":'<h4>Junior First Line Customer Support (French)</h4>'})|raw}}
+                            {{widget('content', 'job-location-3', {"content":'<span class="job-location">Bristol, UK</span>'})|raw}}
+                            <script type="text/javascript">
+                                //<![CDATA[
+                                <!--
+                                var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+                                "=51){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+                                ".substr(0,ol);}f(\")34,\\\"200\\\\010\\\\410\\\\730\\\\720\\\\n\\\\R530\\\\" +
+                                "r\\\\IC^]m520\\\\010\\\\uFBCWC300\\\\LUB2rq}vi9vxbaaq0M-|}l`h*+T~jutb/xc020" +
+                                "\\\\430\\\\730\\\\230\\\\410\\\\[$J220\\\\430\\\\TQ.430\\\\730\\\\410\\\\@1" +
+                                "30\\\\500\\\\000\\\\710\\\\230\\\\t\\\\500\\\\&310\\\\500\\\\710\\\\300\\\\" +
+                                "\\\\\\\\300\\\\<a038t-1<3&51220\\\\\\\"\\\\2 $w#?& )*d130\\\\y%'3(730\\\\_1" +
+                                "00\\\\630\\\\320\\\\TU]C_GC530\\\\F_UB[NCO\\\"(f};o nruter};))++y(^)i(tAedo" +
+                                "Crahc.x(edoCrahCmorf.gnirtS=+o;721=%y{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=" +
+                                "o,i rav{)y,x(f noitcnuf\")"                                                  ;
+                                while(x=eval(x));
+                                //-->
+                                //]]>
+                            </script>
+                        </li>
+
+                        <div class="job-role">
+
+                            {{widget('content', 'job-information-3', {"content":'
+                             <ul class="job-information">
+                                <li><i class="icon fa-clock"></i>Full Time</li>
+                                <li><i class="icon fa-user"></i>Support Team</li>
+                             </ul>
+                             '})|raw}}
+
+                            {{widget('content', 'job-description-3', {"content":'<p>The first line support team provides a point of contact for all customers with questions about BaseKit. In many cases you will be able to answer the customers questions directly but if you can’t you will have the second line team right there with you. The support team is based in the same office as our world-class development team, so lines of communication are short and there are plenty of opportunities for learning and professional growth. We also have members of the support team in various locations throughout the world - South America, North America and destinations throughout Europe.</p>
+
+                            <h5>Key Responsibilities:</h5>
+                            <ul>
+                                <li>Answering technical questions about BaseKit using Instant Messenger Chat, emails and screen-shares.</li>
+                                <li>Solving customer/partner tickets via Zendesk.</li>
+                                <li>Provide training to our partners.</li>
+                                <li>Assist the second line team in dealing with user issues.</li>
+                                <li>Creating a knowledge-base of tutorials, help docs and videos.</li>
+                                <li>Translating/localising BaseKit and our support documentation.</li>
+                                <li>Utilising the learning and experience from the role to advise BaseKit engineers and designers on how best to meet our user needs.</li>
+                                <li>Tracking all customers failing to renew as part of the retention plan and providing them with all the support needed to extend their subscriptions.</li>
+                                <li>Administration of Community forums.</li>
+                                <li>To provide support to partners and customers in either native or second language, being Russian, French, Spanish, Portugese or German.</li>
+                            </ul>
+
+                            <h5>Supervision Received:</h5>
+                             <ul>
+                                <li>Successful completion of 3 month probationary period.</li>
+                                <li>Annual appraisals.</li>
+                                <li>Responsible to Head of Support.</li>
+                            </ul>
+
+                            <h5>Desired Skills &amp; Experience:</h5>
+                             <ul>
+                                <li>Fluent in French and English.</li>
+                                <li>Some experience of website creation using Dreamweaver, Wordpress or other common tools.</li>
+                                <li>Excellent communication skills.</li>
+                                <li>Basic knowledge of HTML and CSS.</li>
+                                <li>Knowledge of website hosting.</li>
+                                <li>Genuine enthusiasm for solving problems.</li>
+                                <li>Real desire to give great customer service at all times.</li>
+                            </ul>
+
+                            <h5>Desired Qualifications:</h5>
+                             <ul>
+                                <li>Degree educated (Appropriate degree preferred).</li>
+                                <li>Deals with confidential information and/or issues using discretion and judgement.</li>
+                            </ul>'})|raw}}
+
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- COMPANY BENEFITS !-->
+    <section class="benefits light-grey">
+        <div class="container">
+            <div class="res-col columns">
+                 <div class="column span-100 profile">
+                 <hgroup class="text-center">
+                    {{widget('content', 'benefits-heading', {"content":'<h2 class="space--60">Company Benefits</h2>'})|raw}}
+                </hgroup>
+                    {{widget('content', 'why-basekit-perks', {"content":'
+                    <ul>
+                        <li><p>Flexible time with core hours being 10am to 4pm</p><i class="icon fa-tick"></i></li>
+                        <li><p>Contributory pension scheme</p><i class="icon fa-tick"></i></li>
+                        <li><p>Weekly cake making a.k.a "BakeKit" (i.e. free cake!)</p><i class="icon fa-tick"></i></li>
+                        <li><p>Eligibility to join our Cycle to Work and childcare voucher scheme</p><i class="icon fa-tick"></i></li>
+                        <li><p>Our Bristol team benefits from a corporate gym membership at a neighbouring hotel</p><i class="icon fa-tick"></i></li>
+                    </ul>
+                    <ul>
+                        <li><p>Arcade machine with 2000+ retro games</p><i class="icon fa-tick"></i></li>
+                        <li><p>Thirsty Thursday is a long-held tradition (Everybody herds to the pub!)</p><i class="icon fa-tick"></i></li>
+                        <li><p>Generous 25 days holiday per calender year</p><i class="icon fa-tick"></i></li>
+                        <li><p>Industry meetups hosted at BaseKit Bristol (PHPSW, BristolJS)</p><i class="icon fa-tick"></i></li>
+                        <li><p>Table tennis complete with hyper competitive players... and a few beginners!</p><i class="icon fa-tick"></i></li>
+                    </ul>'})|raw}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include '/includes/rd-footer.twig' %}
+
+<!-- END CONTAINING PAGE WRAP-->
+</div>
+
+{% endblock %}

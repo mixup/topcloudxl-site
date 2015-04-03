@@ -1,0 +1,28 @@
+<!-- PARTNER BAR !-->
+<section class="partner-bar bottom LightGrey clearfix">
+    <div class="wrapper">
+        <div class="desktop">
+            <div class="res-col columns span-20-5">
+                <div class="column span-5-first">
+                    {{widget('content', 'partnerbar1content1', {"content":'<h4 class="h4light">Join 100+ partners in 26 countries across the globe. <a href="/our-partners">VIEW MORE..</a></h4>'})|raw}}
+                </div>
+                <div class="column span-5">
+                    <img src="{{asset('/images/partner-logos/host-europe.png')}}" class="he-logo">
+                </div>
+                <div class="column span-5">
+                    <img src="{{asset('/images/partner-logos/telefonica.png')}}" class="telefonica-logo">
+                </div>
+                <div class="column span-5">
+                    <img src="{{asset('/images/partner-logos/enom.png')}}" class="enom-logo">
+                </div>
+                <div class="column span-5">
+                    <a href="/partners" class="button main-btn green">Become a Partner</a>
+                </div>
+            </div>
+        </div>
+      <!-- BAR - TABLET !-->
+        <div class="partner-res">
+            {{widget('content', 'partnerbar2content1', {"content":'<h3><span class="mobHide">Start your free, <span class="darkspan">no-risk</span>, BaseKit trial!</span></h3><a href="/partners" class="button main-btn green">Become a Partner</a>'})|raw}}
+        </div>
+    </div>
+</section>

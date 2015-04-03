@@ -1,0 +1,121 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<!-- CONTAINING PAGE WRAP-->
+<div class="page-wrap">
+
+<!-- HEADER !-->
+{% include '/includes/rd-header--alt.twig' %}
+
+    <!-- WHO WE ARE !-->
+    <section class="section  who-we-are">
+        <div class="container">
+            {{widget('content', 'who-heading', {"content":'<h2>Who we are</h2>'})|raw}}
+            {{widget('content', 'who-sub-heading', {"content":'<p>Since 2008, BaseKit has been forming lasting partnerships with telcos, directories and hosting companies all over the world.  We provide a website building platform  for your customers in multiple languages. Partnership also means on-going support from the BaseKit team. </p>'})|raw}}
+        </div>
+    </section>
+
+    <!-- KEY PLAYERS !-->
+    <section class="section  key-players">
+        <div class="container">
+            <hgroup>
+                {{widget('content', 'team-heading', {"content":'<h2 class="h2-36pad">Our key players</h2>'})|raw}}
+                {{widget('content', 'team-sub-heading', {"content":'<p>Our global team of over 70 experts are on hand to provide web<br> services that suit the needs of your business perfectly, partnering<br> with BaseKit means a long term solution, not a quick fix.</p>'})|raw}}
+            </hgroup>
+            <div class="res-col columns span-50-50">
+                <div class="column span-two-left profile">
+                    <div class="profile-img">
+                        <img id="simon" src="{{asset('images/profile-simon.png')}}">
+                        <ul class="social">
+                            <li><a href="http://uk.linkedin.com/in/simonbasekit" id="profile-linkedin" target="_blank"></a></li>
+                            <li><a href="https://twitter.com/simonbest" id="profile-twitter" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                    {{widget('content', 'simon-heading', {"content":'<h5>Simon Best<span>Co-Founder</span></h5>'})|raw}}
+                    {{widget('content', 'simon-description', {"content":'<p>Our CTO and co-founder, Simon has established a successful portfolio of web-based companies before founding BaseKit. He is a true web expert, and knows how to make sites that work perfectly, from base code to flawless finish.</p>'})|raw}}
+                </div>
+                <div class="column span-two-right profile">
+                    <div class="profile-img">
+                        <img id="richard" src="{{asset('images/profile-richard.png')}}">
+                        <ul class="social">
+                            <li><a href="http://uk.linkedin.com/in/richardhealy" id="profile-linkedin" target="_blank"></a></li>
+                            <li><a href="https://twitter.com/richardhealy" id="profile-twitter" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                    {{widget('content', 'richard-heading', {"content":'<h5>Richard Healy<span>Co-Founder</span></h5>'})|raw}}
+                    {{widget('content', 'richard-description', {"content":'<p>BaseKit co-founder and VP of Technology and Design, Richard leads the BaseKit team. Our key to success is simplicity for the user, and Richard is the man that ensures BaseKit’s design and functionality are working in perfect harmony.</p>'})|raw}}
+                </div>
+                <hr class="divider-cross"></hr>
+                <div class="column span-two-left profile">
+                    <div class="profile-img">
+                        <img id="juan" src="{{asset('images/profile-juan.png')}}">
+                        <ul class="social">
+                            <li><a href="http://uk.linkedin.com/in/juanlobato"id="profile-linkedin" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                    {{widget('content', 'juan-heading', {"content":'<h5>Juan Lobato<span>CEO</span></h5>'})|raw}}
+                    {{widget('content', 'juan-description', {"content":'<p>CEO and leader of the BaseKit team, Juan has a long and successful history working in the technology sector. Since joining BaseKit, he has remained consistently hands-on, making sure that however fast technology moves, BaseKit are ahead of the curve.</p>'})|raw}}
+                </div>
+                <div class="column span-two-right profile">
+                    <div class="profile-img">
+                        <img id="gordon" src="{{asset('images/profile-gordon.png')}}">
+                        <ul class="social">
+                            <li><a href="http://uk.linkedin.com/in/gordonplant" id="profile-linkedin" target="_blank"></a></li>
+                            <li><a href="https://twitter.com/gordonplant" id="profile-twitter" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                     {{widget('content', 'gordon-heading', {"content":'<h5>Gordon Plant<span>VP Product</span></h5>'})|raw}}
+                     {{widget('content', 'gordon-description', {"content":'<p>Our VP of product, Gordon ensures every aspect of your site works with the user in mind. He has broad ranging and practical experience in user experience, and regularly shares his extensive knowledge at industry events.</p>'})|raw}}
+                </div>
+                <hr class="divider-cross"></hr>
+                <div class="column span-two-left profile">
+                    <div class="profile-img">
+                        <img id="golda" src="{{asset('images/profile-golda.png')}}">
+                        <ul class="social">
+                            <li><a href="http://uk.linkedin.com/pub/golda-ajayi/27/b65/4a0"id="profile-linkedin" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                    {{widget('content', 'golda-heading', {"content":'<h5>Golda Ajayi<span>CFO</span></h5>'})|raw}}
+                    {{widget('content', 'golda-description', {"content":'<p>As CFO, Golda provides strategic financial leadership through a proven track record of improving performance and transforming services in a variety of industries. Her talents ensure BaseKit has the ability to invest in our product, people and our partners.</p>'})|raw}}
+                </div>
+                <div class="column span-two-right profile">
+                    <div class="profile-img">
+                        <img id="thomas" src="{{asset('images/profile-thomas.png')}}">
+                        <ul class="social">
+                            <li><a href="http://uk.linkedin.com/in/tvollrath" id="profile-linkedin" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                     {{widget('content', 'thomas-heading', {"content":'<h5>Thomas Vollrath<span>Board Director</span></h5>'})|raw}}
+                     {{widget('content', 'thomas-description', {"content":'<p>Board Director and former CEO of Host Europe Group, Thomas is a significant figure in the hosting community who has been involved with BaseKit since its inception, overseeing our first partnership with 123-reg.</p>'})|raw}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="investor  center">
+         <div class="container">
+            {{widget('content', 'investorbar', {"content":'<h4 class="h4light">Our investors</h4>'})|raw}}
+            <div class="res-col columns span-25x4">
+                <div class="column span-four">
+                    <img src="{{asset('images/partner-logos/angel.png')}}" class="angel-logo">
+                </div>
+                <div class="column span-four">
+                    <img src="{{asset('images/partner-logos/nauta-capital.png')}}" class="nauta-logo">
+                </div>
+                <div class="column span-four">
+                    <img src="{{asset('images/partner-logos/nesta.png')}}" class="nesta-logo">
+                </div>
+                <div class="column span-four">
+                    <img src="{{asset('images/partner-logos/eden-ventures.png')}}" class="eden-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include '/includes/rd-footer.twig' %}
+
+<!-- END CONTAINING PAGE WRAP-->
+</div>
+
+{% endblock %}
